@@ -132,3 +132,9 @@ footer > .max-width {
 .global-footer__links{
     grid-area: links;
 }
+
+/* LAYOUT - WINE TOUR PAGE */
+
+.book-tour_cta-button{
+    justify-self: center;
+}
