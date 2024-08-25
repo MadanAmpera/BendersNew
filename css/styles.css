@@ -8,15 +8,15 @@
     border: 1px solid black;
 }
 
-body{
+/* body{
     background-color: #c5d2b9;
-}
+} */
 
 /*LAYOUT*/
 
 .max-width{
     width: 100%;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     padding: 1em;
     background: #fff5e7;
 }
@@ -30,8 +30,6 @@ body{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 10px;
-    justify-items: center;
-    height: 100vh;
 }
 
 .section-grid > * {
@@ -162,6 +160,18 @@ footer > .max-width {
     }
 }
 
+/* LAYOUT - WINE TOUR PAGE */
+
+@media (width >= 600px){
+    .pricing-table{
+        grid-column: 1 / 4;
+    }
+    .tour-info{
+        grid-column: 5 / 13;
+    }
+}
+
+
 /* TYPOGRAPHY */
 
 @font-face {
@@ -193,4 +203,48 @@ li a {
     color: #FFFFFF;
     text-decoration: none;
     font-family: "MADE Mirage", Times, serif;
+}
+
+/* COMPONENTS */
+
+img{
+    max-width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    font-family: "Cheyenne Sans", Helvetica, sans-serif;
+    border: 2px solid #545540;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    background-color: rgb(84, 85, 64, 0.3);
+    color: #545540;
+}
+  
+caption {
+    caption-side: bottom;
+    padding: 10px;
+}
+
+th,
+td {
+  border: 1px solid #fff5e7;
+  padding: 8px 10px;
+  text-align: center;
+}
+
+/* COMPONENTS - WINE TOUR PAGE */
+
+.wine-tour-image{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (width >= 600px){
+    .wine-tour-image{
+        height: 33vh;
+        width: 100%;
+        object-fit: cover;
+    }   
 }
