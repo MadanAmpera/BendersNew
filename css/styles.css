@@ -12,10 +12,6 @@ body{
     background-color: #c5d2b9;
 }
 
-main{
-    height: 100vh;
-}
-
 /*LAYOUT*/
 
 .max-width{
@@ -34,6 +30,8 @@ main{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 10px;
+    justify-items: center;
+    height: 100vh;
 }
 
 .section-grid > * {
@@ -133,8 +131,3 @@ footer > .max-width {
     grid-area: links;
 }
 
-/* LAYOUT - WINE TOUR PAGE */
-
-.book-tour_cta-button{
-    justify-self: center;
-}
