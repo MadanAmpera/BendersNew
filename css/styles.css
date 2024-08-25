@@ -162,3 +162,35 @@ footer > .max-width {
     }
 }
 
+/* TYPOGRAPHY */
+
+@font-face {
+    font-family: "Cheyenne Sans";
+    src: url('../resources/fonts/CheyenneSans-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "MADE Mirage";
+    src: url('../resources/fonts/MADE-Mirage-Regular.otf') format("opentype");
+}
+
+h1, h2, h3 {
+    font-family: "MADE Mirage", Times, serif;
+    color: #545540;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    font-family: "Cheyenne Sans", Helvetica, sans-serif;
+    color: #545540;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "MADE Mirage", Times, serif;
+}
