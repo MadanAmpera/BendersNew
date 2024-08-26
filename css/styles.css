@@ -205,6 +205,26 @@ footer > .max-width {
     justify-self: center;
 }
 
+/* LAYOUT - FAQ PAGE */
+
+@media(width >= 600px){
+    .faq-collection{
+        grid-column: 2 / 12;
+    }
+}
+
+/* LAYOUT - BLOG PAGE */
+
+.blog-article_link{
+    justify-self: end;
+}
+
+@media(width >= 600px){
+    .blog-article-collection{
+        grid-column: 2 / 12;
+    }
+}
+
 /* TYPOGRAPHY */
 
 @font-face {
@@ -277,6 +297,20 @@ td {
     object-fit: cover;
 }
 
+.line-clamp {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;  
+}
+
+.link-style {
+    font-family: "MADE Mirage", Times, serif;
+    color: #545540;
+    text-decoration: underline;
+}
+
 @media (width >= 600px){
     .page-image{
         height: 50vh;
@@ -313,4 +347,16 @@ ol{
     font-size: 0.9rem;
     line-height: 1.5;
     padding: 1em;
+}
+
+/* COMPONENTS - BLOG PAGE */
+
+.blog-article-item{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-article_link{
+    align-self: flex-end;
 }
