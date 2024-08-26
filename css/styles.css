@@ -215,7 +215,6 @@ img{
 }
 
 table {
-    border-collapse: collapse;
     font-family: "Cheyenne Sans", Helvetica, sans-serif;
     border: 2px solid #545540;
     font-size: 0.8rem;
@@ -267,7 +266,7 @@ ol{
     color: #545540;
     font-size: 0.9rem;
     line-height: 1.5;
-    margin-bottom: 1rem;
+    padding: 1em;
 }
 
 .wine-tour-image{
