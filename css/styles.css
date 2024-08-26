@@ -277,7 +277,7 @@ ol{
 
 @media (width >= 600px){
     .wine-tour-image{
-        height: 33vh;
+        height: 50vh;
         width: 100%;
         object-fit: cover;
     }   
