@@ -225,6 +225,23 @@ footer > .max-width {
     }
 }
 
+/* LAYOUT - BLOG ARTICLE PAGE */
+
+.blog-nav-link{
+    grid-row: 2;
+    justify-self: start;
+}
+.blog-article-date{
+    grid-row: 2;
+    justify-self: end;
+}
+
+@media(width >= 600px){
+    .blog-article-container{
+        grid-column: 2 / 12;
+    }
+}
+
 /* TYPOGRAPHY */
 
 @font-face {
@@ -311,6 +328,12 @@ td {
     text-decoration: underline;
 }
 
+.blog-date{
+    font-family: "Cheyenne Sans", Helvetica, sans-serif;
+    color: #545540;
+    font-size: 0.7rem;
+}
+
 @media (width >= 600px){
     .page-image{
         height: 50vh;
@@ -361,8 +384,9 @@ ol{
     align-self: flex-end;
 }
 
-.blog-date{
-    font-family: "Cheyenne Sans", Helvetica, sans-serif;
-    color: #545540;
-    font-size: 0.7rem;
-}
+
+
+/* COMPONENTS - BLOG ARTICLE PAGE */
+
+
+
