@@ -125,9 +125,10 @@ footer > .max-width {
 
 .global-footer__grid{
     display: grid;
+    justify-items: center;
     gap: 2em;
-    grid-template-areas: "copyright"
-                         "links"; 
+    grid-template-areas: "links"
+                         "copyright";
 }
 
 .global-footer__copyright{
@@ -135,10 +136,16 @@ footer > .max-width {
     color: #FFFFFF;
 }
 
-.global-footer__links{
+.global-footer__links, .global-footer__links li{
     grid-area: links;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.global-footer__links > li{
+    margin-top: 1rem;
+}
 
 /* LAYOUT - HOME PAGE */
 
@@ -214,8 +221,6 @@ p {
     margin-bottom: 1rem;
 }
 
-
-
 /* COMPONENTS */
 
 img{
@@ -271,10 +276,18 @@ td {
 
 /* COMPONENTS - FOOTER */
 
+footer li p {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "MADE Mirage", Times, serif;
+}
+
 footer li a {
     color: #FFFFFF;
     text-decoration: none;
     font-family: "Cheyenne Sans", Helvetica, sans-serif;
+    margin-bottom: 0.5rem;
+    text-decoration: underline;
 }
 
 /* COMPONENTS - WINE TOUR PAGE */
