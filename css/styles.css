@@ -91,15 +91,25 @@ header > .max-width {
 
 @media (width >= 600px){
     .global-nav{
-        grid-template-columns: max-content 1fr;
+        grid-template-columns: 1fr max-content ;
         grid-template-areas: "logo contact";
     }
     .global-nav__contact{
-        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
     }
     .global-nav__links{
         grid-row: 2;
-        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #fff5e7;
+    }
+    .global-nav__links ul{
+        display: none;
     }
     .global-nav__promotions{
         grid-row: 3;
@@ -363,16 +373,42 @@ td {
     }   
 }
 
+/* COMPONENTS - HEADER */
+
+.global-nav__contact li{
+    margin-left: 2rem;
+}
+
+.global-nav__contact li a{
+    color: #fff5e7;
+    text-decoration: none;
+    font-family: "Cheyenne Sans", Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.global-nav__links li p, .global-nav__links li a {
+    color: #fff5e7;
+    text-decoration: none;
+    font-family: "MADE Mirage", Times, serif;
+    font-size: 1rem;
+}
+
+@media( width>=600px ){
+    header .max-width{
+        padding: 0rem;
+    }
+}
+
 /* COMPONENTS - FOOTER */
 
 footer li p {
-    color: #FFFFFF;
+    color: #fff5e7;
     text-decoration: none;
     font-family: "MADE Mirage", Times, serif;
 }
 
 footer li a {
-    color: #FFFFFF;
+    color: #fff5e7;
     text-decoration: none;
     font-family: "Cheyenne Sans", Helvetica, sans-serif;
     margin-bottom: 0.5rem;
