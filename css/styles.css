@@ -125,7 +125,6 @@ footer > .max-width {
 
 .global-footer__grid{
     display: grid;
-    justify-items: center;
     gap: 2em;
     grid-template-areas: "links"
                          "copyright";
@@ -134,6 +133,7 @@ footer > .max-width {
 .global-footer__copyright{
     grid-area: copyright;
     color: #FFFFFF;
+    justify-self: center;
 }
 
 .global-footer__links, .global-footer__links li{
@@ -145,6 +145,17 @@ footer > .max-width {
 
 .global-footer__links > li{
     margin-top: 1rem;
+}
+
+@media(width >= 600px){
+    
+    .global-footer__links{
+        grid-area: links;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+    }   
 }
 
 /* LAYOUT - HOME PAGE */
