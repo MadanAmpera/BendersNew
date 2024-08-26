@@ -249,10 +249,10 @@ td {
 
 /* COMPONENTS - FOOTER */
 
-li a {
+footer li a {
     color: #FFFFFF;
     text-decoration: none;
-    font-family: "MADE Mirage", Times, serif;
+    font-family: "Cheyenne Sans", Helvetica, sans-serif;
 }
 
 /* COMPONENTS - WINE TOUR PAGE */
