@@ -162,12 +162,19 @@ footer > .max-width {
 
 /* LAYOUT - WINE TOUR PAGE */
 
+.book-tour_cta-button{
+    grid-column: 4 / -4;
+}
+
 @media (width >= 600px){
     .pricing-table{
         grid-column: 1 / 4;
     }
     .tour-info{
         grid-column: 5 / 13;
+    }
+    .book-tour_cta-button{
+        grid-column: 6 / -6;
     }
 }
 
@@ -199,11 +206,7 @@ p {
     margin-bottom: 1rem;
 }
 
-li a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-family: "MADE Mirage", Times, serif;
-}
+
 
 /* COMPONENTS */
 
@@ -233,7 +236,39 @@ td {
   text-align: center;
 }
 
+.cta-button {
+    background-color: #A02334;
+    border: 1px solid #A02334;
+    color: #fff5e7;
+    text-decoration: none;
+    text-align: center;
+    font-family: "MADE Mirage", Times, serif;
+    padding: 0.75em 0;
+    border-radius: 40px;
+    margin: 1.5em 0;
+}
+
+/* COMPONENTS - FOOTER */
+
+li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "MADE Mirage", Times, serif;
+}
+
 /* COMPONENTS - WINE TOUR PAGE */
+
+.pricing-table{
+    align-self: center;
+}
+
+ol{
+    font-family: "Cheyenne Sans", Helvetica, sans-serif;
+    color: #545540;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
 
 .wine-tour-image{
     height: 300px;
