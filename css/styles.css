@@ -360,3 +360,9 @@ ol{
 .blog-article_link{
     align-self: flex-end;
 }
+
+.blog-date{
+    font-family: "Cheyenne Sans", Helvetica, sans-serif;
+    color: #545540;
+    font-size: 0.7rem;
+}
