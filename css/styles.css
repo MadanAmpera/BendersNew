@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: #c5d2b9;
+    background-color: #fff5e7;
 }
 
 /*LAYOUT*/
@@ -49,15 +49,12 @@ body{
 /* LAYOUT - Global Header*/
 
 header > .max-width {
-    /* Override background color for the footer */
-    background: #545540;
     max-width: 100vw;
 }
 
 .global-nav{
     display: grid;
     grid-template-columns: 2em 1fr 2em;
-    grid-template-rows: 2em;
     grid-template-areas: "hamburger logo .";
 }
 
@@ -69,32 +66,36 @@ header > .max-width {
     grid-area: logo;
     justify-self: center;
     align-self: center;
-    width: 75%;
     height: auto;
+    width: 10em;
 }
 
 .global-nav__contact{
-    grid-area: contact;
     display: none;
 }
 
 .global-nav__links{
     display: none;
-    grid-column: 1 / -1;
-}
-
-.global-nav__promotions{
-    grid-row: 2;
-    grid-column: 1 / -1;
-    background-color: #9e9cb4;
 }
 
 @media (width >= 600px){
     .global-nav{
-        grid-template-columns: 1fr max-content ;
-        grid-template-areas: "logo contact";
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        margin-bottom: 0.5rem;
+    }
+    .global-nav__hamburger-button{
+        display: none;
+    }
+    .global-nav__logo{
+        grid-area: unset;
+        grid-row: 1;
+        grid-column: 6 / -6;
+        width: 12em;
     }
     .global-nav__contact{
+        grid-row: 1;
+        grid-column: 10 / 13;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -104,32 +105,19 @@ header > .max-width {
         grid-row: 2;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
+        padding-top: 0.5rem;
         border-top: 1px solid #fff5e7;
     }
     .global-nav__links ul{
         display: none;
-    }
-    .global-nav__promotions{
-        grid-row: 3;
-        background-color: #9e9cb4;
-    }
-    .global-nav__hamburger-button{
-        display: none;
-    }
-    .global-nav__logo{
-        width: 50%;
-        height: auto;
-        justify-self: flex-start;
     }
 }
 
 /* LAYOUT - Global Footer */
 
 footer > .max-width {
-    /* Override background color for the footer */
-    background: #545540;
     max-width: 100vw;
 }
 
@@ -327,6 +315,10 @@ td {
   text-align: center;
 }
 
+.head-foot-background{
+    background-color: #545540;
+}
+
 .page-image{
     height: 300px;
     width: 100%;
@@ -391,12 +383,16 @@ td {
     text-decoration: none;
     font-family: "MADE Mirage", Times, serif;
     font-size: 1rem;
+    margin-bottom: 0rem;
 }
 
 @media( width>=600px ){
     header .max-width{
         padding-left: 0rem;
         padding-right: 0rem;
+    }
+    .global-nav__links{
+        border-top: 1px solid #fff5e7;
     }
 }
 
@@ -453,7 +449,7 @@ ol{
     background-image: url('../resources/images/site-hero.jpg');
     background-size: cover;
     width: 100vw;
-    height: 93vh;
+    height: 88vh;
 }
 
 .site-hero_cta-button {
