@@ -40,7 +40,7 @@ body{
     grid-column: 4 / -4;
 }
 
-@media (width >= 600px){
+@media (width >= 720px){
     .page_cta-button{
         grid-column: 6 / -6;
     }
@@ -95,7 +95,7 @@ header > .max-width {
     display: none;
 }
 
-@media (width >= 600px){
+@media (width >= 720px){
     .global-nav{
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -169,7 +169,7 @@ footer > .max-width {
     margin-top: 1rem;
 }
 
-@media(width >= 600px){
+@media(width >= 720px){
     
     .global-footer__links{
         grid-area: links;
@@ -192,7 +192,7 @@ footer > .max-width {
     flex-direction: column;
 }
 
-@media (width >= 600px){
+@media (width >= 720px){
     .benders-reviews_box1{
         grid-column: 1 / 6;
         grid-row: 1;
@@ -225,7 +225,7 @@ footer > .max-width {
 
 /* LAYOUT - WINE TOUR PAGE */
 
-@media (width >= 600px){
+@media (width >= 720px){
     .pricing-table{
         grid-column: 1 / 4;
     }
@@ -242,7 +242,7 @@ footer > .max-width {
 
 /* LAYOUT - FAQ PAGE */
 
-@media(width >= 600px){
+@media(width >= 720px){
     .faq-collection{
         grid-column: 2 / 12;
     }
@@ -254,7 +254,7 @@ footer > .max-width {
     justify-self: end;
 }
 
-@media(width >= 600px){
+@media(width >= 720px){
     .blog-article-collection{
         grid-column: 2 / 12;
     }
@@ -271,7 +271,7 @@ footer > .max-width {
     justify-self: end;
 }
 
-@media(width >= 600px){
+@media(width >= 720px){
     .blog-article-container{
         grid-column: 2 / 12;
     }
@@ -381,7 +381,7 @@ td {
     margin: 1.5em 0;
 }
 
-@media (width >= 600px){
+@media (width >= 720px){
     .page-image{
         height: 50vh;
         width: 100%;
@@ -434,7 +434,7 @@ td {
     border-radius: 40px;
 }
 
-@media( width>=600px ){
+@media( width>=720px ){
     header .max-width{
         padding-left: 0rem;
         padding-right: 0rem;
