@@ -112,7 +112,7 @@ header > .max-width {
     }
     .global-nav__contact{
         grid-row: 1;
-        grid-column: 11 / 13;
+        grid-column: 9 / 13;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -141,7 +141,7 @@ footer > .max-width {
     display: grid;
     gap: 2em;
     grid-template-areas: "links"
-                        "socials"
+                         "socials"
                          "copyright";
 }
 
