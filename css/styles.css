@@ -108,10 +108,7 @@ header > .max-width {
         justify-content: space-evenly;
         align-items: center;
         padding-top: 0.5rem;
-        border-top: 1px solid #fff5e7;
-    }
-    .global-nav__links ul{
-        display: none;
+        padding-bottom: 0.5rem;
     }
 }
 
@@ -386,10 +383,35 @@ td {
     margin-bottom: 0rem;
 }
 
+.global-nav__tour-links-hide{
+    display: none;
+}
+
+.global-nav__tour-links-show{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #7596b8;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.global-nav__tour-links-show li a{
+    font-family: "Cheyenne Sans", Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #fff5e7;
+    text-decoration: underline;
+}
+
+#tours-root-nav:hover{
+    cursor: pointer;
+}
+
 @media( width>=600px ){
     header .max-width{
         padding-left: 0rem;
         padding-right: 0rem;
+        padding-bottom: 0rem;
     }
     .global-nav__links{
         border-top: 1px solid #fff5e7;
