@@ -109,8 +109,8 @@ header > .max-width {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
     }
 }
 
@@ -124,6 +124,7 @@ footer > .max-width {
     display: grid;
     gap: 2em;
     grid-template-areas: "links"
+                        "socials"
                          "copyright";
 }
 
@@ -131,6 +132,13 @@ footer > .max-width {
     grid-area: copyright;
     color: #FFFFFF;
     justify-self: center;
+}
+.global-footer__socials{
+    grid-area: socials;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 }
 
 .global-footer__links, .global-footer__links li{
