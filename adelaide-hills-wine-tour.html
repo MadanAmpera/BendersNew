@@ -27,17 +27,15 @@
                 </div>
                 <ul class="global-nav__links">
                     <li><a href="index.html">Home</a></li>
-                    <li>
-                        <p>Tours</p>
-                        <ul>
-                            <li><a href="barossa-wine-tour.html">Barossa Valley Wine Tour</a></li>
-                            <li><a href="mclaren-vale-tour.html">McLaren Vale Wine Tour</a></li>
-                            <li><a href="adelaide-hills-wine-tour.html">Adelaide Hills Wine Tour</a></li>
-                        </ul>
-                    </li>
+                    <li><p id="tours-root-nav">Tours</p></li>
                     <li><a href="bus-hire.html">Bus Hire</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="blog.html">Blog</a></li>
+                </ul>
+                <ul id="tours-nav-links" class="global-nav__tour-links-hide">
+                    <li><a href="barossa-wine-tour.html">Barossa Valley Wine Tour</a></li>
+                    <li><a href="mclaren-vale-tour.html">McLaren Vale Wine Tour</a></li>
+                    <li><a href="adelaide-hills-wine-tour.html">Adelaide Hills Wine Tour</a></li>
                 </ul>
                 <!-- <div class="global-nav__promotions">
                     <a href="promotions.html">Special offers!</a>
@@ -139,6 +137,31 @@
                 </ul>
             </div>
         </footer>
-        <script src="" async defer></script>
+        <script>
+
+            const mediaQuery = window.matchMedia('(min-width: 600px)');
+
+            function handleMediaQueryChange(event){
+                if(event.matches){
+                    document.getElementById('tours-root-nav').addEventListener('click', function(){
+                        document.getElementById('tours-nav-links').classList.remove('global-nav__tour-links-hide');
+                        document.getElementById('tours-nav-links').classList.add('global-nav__tour-links-show');
+                    });
+
+                    document.addEventListener('click', event =>{
+                        let isClickInside = document.getElementById('tours-root-nav').contains(event.target) || document.getElementById('tours-nav-links').contains(event.target);
+
+                        if(!isClickInside){
+                            document.getElementById('tours-nav-links').classList.remove('global-nav__tour-links-show');
+                            document.getElementById('tours-nav-links').classList.add('global-nav__tour-links-hide');
+                        }
+                    });
+                }
+            }
+
+            handleMediaQueryChange(mediaQuery);
+
+            
+        </script>
     </body>
 </html>
