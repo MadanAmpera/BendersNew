@@ -497,8 +497,10 @@ ol{
 .background-image{
     background-image: url('../resources/images/site-hero.jpg');
     background-size: cover;
+    background-position-y: bottom;
     width: 100vw;
     height: 90vh;
+    
 }
 
 .site-hero_cta-button {
