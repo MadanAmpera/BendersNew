@@ -95,11 +95,13 @@ header > .max-width {
     }
     .global-nav__contact{
         grid-row: 1;
-        grid-column: 10 / 13;
+        grid-column: 11 / 13;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
+        gap: 1rem;
+        margin-right: 1rem;
     }
     .global-nav__links{
         grid-row: 2;
@@ -364,17 +366,6 @@ td {
 
 /* COMPONENTS - HEADER */
 
-.global-nav__contact li{
-    margin-left: 2rem;
-}
-
-.global-nav__contact li a{
-    color: #fff5e7;
-    text-decoration: none;
-    font-family: "Cheyenne Sans", Helvetica, sans-serif;
-    font-size: 1rem;
-}
-
 .global-nav__links li p, .global-nav__links li a {
     color: #fff5e7;
     text-decoration: none;
@@ -405,6 +396,17 @@ td {
 
 #tours-root-nav:hover{
     cursor: pointer;
+}
+
+.phone-cta-button {
+    background-color: #fff5e7;
+    border: 1px solid rgb(84, 85, 64, 0.5);
+    color: #545540;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Cheyenne Sans", Helvetica, sans-serif;
+    padding: 0.25em 0.75em;
+    border-radius: 40px;
 }
 
 @media( width>=600px ){
@@ -471,7 +473,7 @@ ol{
     background-image: url('../resources/images/site-hero.jpg');
     background-size: cover;
     width: 100vw;
-    height: 88vh;
+    height: 90vh;
 }
 
 .site-hero_cta-button {
