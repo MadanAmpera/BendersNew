@@ -7,12 +7,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     </head>
     <body>
-        <header class="global-header max-width-container">
-            <div class="global-nav__promotions">
-                <a href="promotions.html">SPECIAL OFFERS!</a>
-            </div>
+        <div class="global-nav__promotions">
+            <a href="promotions.html">SPECIAL OFFERS!</a>
+        </div>
+        <header id="global-header" class="global-header max-width-container">
             <nav class="max-width head-foot-background">
                 <div class="global-nav">
                     <div class="global-nav__hamburger-button">
@@ -28,19 +29,24 @@
                         <a href="#"><img src="../resources/images/instagram.svg" alt="instagram icon"></a>
                     </div>
                 </div>
+            </nav>
+        </header>
+        <header id="nav-header" class="header-nav-links max-width-container">
+            <nav class="max-width head-foot-background">
                 <ul class="global-nav__links">
                     <li><a href="index.html">Home</a></li>
-                    <li><p id="tours-root-nav">Tours</p></li>
+                    <li><p id="tours-root-nav">Tours</p>
+                        <ul id="tours-nav-links" class="global-nav__tour-links global-nav__tour-links-hide">
+                            <li><a href="barossa-wine-tour.html">BAROSSA VALLEY WINE TOUR</a></li>
+                            <li><a href="adelaide-hills-wine-tour.html">ADELAIDE HILLS & HAHNDORF WINE TOUR</a></li>
+                            <li><a href="mclaren-vale-tour.html">MCLAREN VALE WINE TOUR</a></li>
+                        </ul>
+                    </li>
                     <li><a href="bus-hire.html">Bus Hire</a></li>
                     <li><a href="#">Memories</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="#">Get In Touch</a></li>
-                </ul>
-                <ul id="tours-nav-links" class="global-nav__tour-links-hide">
-                    <li><a href="barossa-wine-tour.html">BAROSSA VALLEY WINE TOUR</a></li>
-                    <li><a href="adelaide-hills-wine-tour.html">ADELAIDE HILLS & HAHNDORF WINE TOUR</a></li>
-                    <li><a href="mclaren-vale-tour.html">MCLAREN VALE WINE TOUR</a></li>
                 </ul>
             </nav>
         </header>
@@ -149,21 +155,31 @@
                     </div>
                 </div>
             </section>
-            <section class="pseudo-footer-image-carousel max-width-container">
+            <!-- <section class="pseudo-footer-image-carousel max-width-container">
                 <div class="section-grid max-width">
-                    
+                    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "prevNextButtons": false, "pageDots": false }'>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="../resources/images/carousel/0D0A1556.jpg">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="../resources/images/carousel/0D0A1556.jpg">
+                        </div>
+                        <div class="carousel-cell"></div>
+                        <div class="carousel-cell"></div>
+                        <div class="carousel-cell"></div>
+                        <div class="carousel-cell"></div>
+                        <div class="carousel-cell"></div>
+                    </div>
                 </div>
-            </section>
+            </section> -->
         </main>
         <footer class="global-footer max-width-container">
             <div class="global-footer__grid max-width head-foot-background">
                 <p class="global-footer__copyright">Copyright 2024, Benders Bus Tours</p>
-                <div class="global-footer__socials">
-                    <a href="#"><img src="../resources/images/facebook.svg" alt="facebook icon"></a>
-                    <a href="#"><img src="../resources/images/instagram.svg" alt="instagram icon"></a>
-                </div>
+
                 <ul class="global-footer__links">
-                    <li class="general-site-links">
+                    <li>
+                        <p>Quick Links</p>
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="bus-hire.html">Bus Hire</a></li>
@@ -184,7 +200,9 @@
                         <p>Get In Touch</p>
                         <ul>
                             <li><a href="tel:+61452532573">0452532573</a></li>
-                            <li><a href="#">Email</a></li>
+                            <li><a href="#"><img src="../resources/images/email.svg" alt="email icon"></a></li>
+                            <li><a href="#"><img src="../resources/images/facebook.svg" alt="facebook icon"></a></li>
+                            <li><a href="#"><img src="../resources/images/instagram.svg" alt="instagram icon"></a></li>
                         </ul>
                     </li>
                 </ul>
@@ -192,7 +210,7 @@
         </footer>
         <script>
 
-            const mediaQuery = window.matchMedia('(min-width: 720px)');
+            const mediaQuery = window.matchMedia('(min-width: 768px)');
 
             function handleMediaQueryChange(event){
                 if(event.matches){
@@ -209,11 +227,25 @@
                             document.getElementById('tours-nav-links').classList.add('global-nav__tour-links-hide');
                         }
                     });
+
+                    //adding sticky to navigation links
+                    document.getElementById('global-header').classList.remove('sticky');
+                    document.getElementById('nav-header').classList.add('sticky');
+                }
+                else{
+                    //adding sticky to global header
+                    document.getElementById('nav-header').classList.remove('sticky');
+                    document.getElementById('global-header').classList.add('sticky');
                 }
             }
 
             handleMediaQueryChange(mediaQuery);
+
+            window.onresize = function(){
+                handleMediaQueryChange(mediaQuery);
+            }
             
         </script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </body>
 </html>
