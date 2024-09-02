@@ -167,7 +167,10 @@ footer > .max-width {
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-around;
-    }   
+    }
+    .general-site-links{
+        margin-top: 42px;
+    }
 }
 
 /* LAYOUT - HOME PAGE */
@@ -473,6 +476,7 @@ footer li a {
     text-decoration: none;
     font-family: "Cheyenne Sans", Helvetica, sans-serif;
     margin-bottom: 0.5rem;
+    font-size: 0.9rem;
 }
 
 /* COMPONENTS - WINE TOUR PAGE */
