@@ -269,6 +269,9 @@ footer > .max-width {
     }
     .tour-info{
         grid-column: 5 / 13;
+    }
+    .mobile-reviews{
+        display: none;
     }   
 }
 
