@@ -93,6 +93,7 @@ header > .max-width {
     position: -webkit-sticky; /* For Safari */
     position: sticky;
     top: 0;
+    z-index: 9;
 }
 
 @media (width > 768px){
@@ -214,6 +215,10 @@ footer > .max-width {
     justify-content: center;
     align-items: center;
 }
+
+/* .pseudo-footer-image-carousel{
+    width: 28vh;
+} */
 
 @media (width >= 900px){
     .reviews-heading{
@@ -553,7 +558,7 @@ ol{
 /* COMPONENTS - HOME PAGE */
 
 .background-image{
-    background-image: url('../resources/images/site-hero.jpg');
+    background-image: url('../resources/images/site-hero.webp');
     background-size: cover;
     background-position-y: bottom;
     background-position-x: 50%;
@@ -594,31 +599,16 @@ blockquote {
 	position: relative;
 }
 
-/* blockquote:before,
-blockquote:after {
-	position: absolute;
-	color: rgb(84, 85, 64, 0.3);
-	font-size: 6rem;
-	width: 4rem;
-	height: 4rem;
-}
-
-blockquote:before {
-	content: '“';
-	left: -5rem;
-	top: -3rem;
-}
-
-blockquote:after {
-	content: '”';
-	right: -1rem;
-	bottom: 0rem;
-} */
-
 cite{
     font-family: "MADE Mirage", Times, serif;
     color: #545540;
     font-size: 0.9rem;
     line-height: 1.5;
     margin-bottom: 1rem;
+}
+
+.carousel-image{
+    object-fit: cover;
+    padding: 2rem;
+    height: 40vh;
 }
