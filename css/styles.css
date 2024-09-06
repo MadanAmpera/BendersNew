@@ -220,6 +220,10 @@ footer > .max-width {
     right: -10px !important;
 }
 
+.flickity-button {
+    background: transparent !important;
+  }
+
 .star-rating{
     display: flex;
     flex-direction: row;
@@ -227,9 +231,15 @@ footer > .max-width {
     align-items: center;
 }
 
-/* .pseudo-footer-image-carousel{
-    width: 28vh;
-} */
+.desktop-reviews{
+    display: none;
+}
+
+.three-reviews-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
 @media (width >= 900px){
     .reviews-heading{
@@ -272,6 +282,9 @@ footer > .max-width {
     }
     .mobile-reviews{
         display: none;
+    }
+    .desktop-reviews{
+        display: block;
     }   
 }
 
