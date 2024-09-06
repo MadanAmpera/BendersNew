@@ -215,11 +215,6 @@ footer > .max-width {
     align-items: center;
 }
 
-.review-star{
-    width: 20px;
-    height: 20px;
-}
-
 @media (width >= 900px){
     .reviews-heading{
         grid: 1;
