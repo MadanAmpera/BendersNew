@@ -209,6 +209,17 @@ footer > .max-width {
     align-items: center;
 }
 
+.flickity-page-dots {
+    bottom: 0px !important;
+}
+
+.flickity-prev-next-button.previous {
+    left: -10px !important;
+}
+  .flickity-prev-next-button.next {
+    right: -10px !important;
+}
+
 .star-rating{
     display: flex;
     flex-direction: row;
