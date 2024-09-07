@@ -159,12 +159,20 @@ footer > .max-width {
     margin-bottom: 0rem;
 }
 
-.global-footer__links, .global-footer__links li{
+.global-footer__links{
     grid-area: links;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
 }
+
+.global-footer__links li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 @media(width > 768px){
     
@@ -175,6 +183,8 @@ footer > .max-width {
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-evenly;
+        justify-self: center;
+        gap: 5rem;
     }
 }
 
