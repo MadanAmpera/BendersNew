@@ -608,7 +608,7 @@ ol{
 @media (width > 786px){
     .blog-stub-image{
         object-fit: cover;
-        max-height: 180px;
+        max-height: 200px;
         width: auto;
     }
 }
