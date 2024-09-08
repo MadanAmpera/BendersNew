@@ -309,12 +309,21 @@ footer > .max-width {
 
 /* LAYOUT - FAQ PAGE */
 
+.faq-question-answer-set{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .faq-question-block{
     display: grid;
     grid-template-columns: 1fr 2em;
-    padding: 0.5rem;
     border-bottom: #545540 1px solid;
     align-items: center;
+}
+
+.faq-question{
+    font-size: 1.1em;
+    margin-bottom: 0rem;
 }
 
 .arrow-up{
@@ -326,16 +335,17 @@ footer > .max-width {
     width: 40px;
 }
 
-.arrow-show{
+.faq-show{
     display: block;
 }
 
-.arrow-hide{
+.faq-hide{
     display: none;
 }
 
 .faq-answer{
     padding: 0.5rem;
+    background-color: rgb(84, 85, 64, 0.2);
 }
 
 @media(width > 768px){
