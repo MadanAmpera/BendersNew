@@ -403,6 +403,35 @@ footer > .max-width {
     }
 }
 
+/* LAYOUT - MEMORIES PAGE */
+
+.memories-grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.memories-image-container{
+    grid-column: span 12;
+}
+
+@media only screen and (min-width: 600px) and (max-width:768px){
+    .memories-image-container{
+        grid-column: span 6;
+    }   
+}
+
+@media only screen and (min-width: 769px) and (max-width:1400px){
+    .memories-image-container{
+        grid-column: span 4;
+    }   
+}
+
+@media(width >= 1440px){
+    .memories-image-container{
+        grid-column: span 3;
+    }
+}
+
 /* TYPOGRAPHY */
 
 @font-face {
@@ -815,4 +844,13 @@ cite{
     .carousel-image{
         height: 40vh;
     }   
+}
+
+/* COMPONENTS - MEMORIES PAGE */
+
+.memories-image{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    padding: 0.25rem;
 }
