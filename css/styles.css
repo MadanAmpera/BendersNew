@@ -820,7 +820,7 @@ ol{
     background-position-y: bottom;
     background-position-x: 50%;
     width: 100vw;
-    height: 85vh;
+    height: 83vh;
     
 }
 
@@ -883,7 +883,13 @@ cite{
 .memories-image{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
     padding: 0.25rem;
+}
+
+@media(width > 350px){
+    .memories-image{
+        object-fit: cover;
+    }   
 }
