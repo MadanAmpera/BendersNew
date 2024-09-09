@@ -282,22 +282,6 @@
                 document.getElementById('mobile-menu').classList.add('mobile-nav-hide');
             }
 
-            function getData(form) {
-                var formData = new FormData(form);
-                var data = '';
-
-                for (var pair of formData.entries()) {
-                    data += pair[0] + ": " + pair[1] + "\n";
-                }
-
-                alert(data);
-            }
-
-            document.getElementById("contactForm").addEventListener("submit", function (e) {
-                e.preventDefault();
-                getData(e.target);
-            });
-
         </script>
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </body>
