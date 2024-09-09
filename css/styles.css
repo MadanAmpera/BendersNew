@@ -882,7 +882,6 @@ cite{
 
 .memories-image{
     width: 100%;
-    height: 100%;
     object-fit: contain;
     object-position: center;
     padding: 0.25rem;
@@ -890,6 +889,8 @@ cite{
 
 @media(width > 350px){
     .memories-image{
+        width: 100%;
+        height: 100%;
         object-fit: cover;
     }   
 }
