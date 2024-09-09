@@ -433,6 +433,13 @@ footer > .max-width {
     }
 }
 
+/* LAYOUT - CONTACT US*/
+
+.contact-us .max-width{
+    max-width: 768px;
+}
+
+
 /* TYPOGRAPHY */
 
 @font-face {
@@ -885,4 +892,35 @@ cite{
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+/* COMPONENTS - CONTACT US */
+
+form {
+    padding: 1rem;
+}
+
+input[type=text],
+input[type=date],
+input[type=number],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+}
+
+label {
+    text-transform: uppercase;
+    font-family: "Cheyenne Sans", Helvetica, sans-serif;
+    color: #545540;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
 }

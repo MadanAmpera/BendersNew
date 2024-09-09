@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Contact Us</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <base href="https://madanampera.github.io/BendersNew/">
+    </head>
+    <body>
+        <div class="global-nav__promotions">
+            <a href="#">SPECIAL OFFERS!</a>
+        </div>
+        <header id="global-header" class="global-header max-width-container">
+            <nav class="max-width head-foot-background">
+                <div class="global-nav">
+                    <div class="global-nav__hamburger-button">
+                        <img src="resources/images/menu.svg" alt="hamburger menu" onclick="showMobileMenu()" style="cursor: pointer;">
+                    </div>
+                    <a class="global-nav__logo" href="index.html">
+                        <img class="logo-style" src="resources/images/Benders-Logo-Cropped.png" alt="Benders Bus Tours logo">
+                    </a>
+                    <div class="global-nav__contact">
+                        <a class="phone-cta-button" href="tel:+61452532573">0452532573</a>
+                        <a href="#"><img src="resources/images/facebook.svg" alt="facebook icon"></a>
+                        <a href="#"><img src="resources/images/instagram.svg" alt="instagram icon"></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <header id="nav-header" class="header-nav-links max-width-container">
+            <nav class="max-width head-foot-background">
+                <ul class="global-nav__links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><p id="tours-root-nav">Tours</p>
+                        <ul id="tours-nav-links" class="global-nav__tour-links global-nav__tour-links-hide">
+                            <li><a href="barossa-wine-tour.html">BAROSSA VALLEY WINE TOUR</a></li>
+                            <li><a href="adelaide-hills-wine-tour.html">ADELAIDE HILLS & HAHNDORF WINE TOUR</a></li>
+                            <li><a href="mclaren-vale-tour.html">MCLAREN VALE WINE TOUR</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="bus-hire.html">Bus Hire</a></li>
+                    <li><a href="memories.html">Memories</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="#">Get In Touch</a></li>
+                </ul>
+            </nav>
+        </header>
+        <header id="mobile-menu" class="mobile-nav-links mobile-nav-hide max-width-container sticky">
+            <nav class="max-width head-foot-background">
+                <img class="mobile-nav-close" src="resources/images/close.svg" onclick="hideMobileMenu()" style="cursor: pointer;">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><p>Tours</p>
+                        <ul>
+                            <li><a href="barossa-wine-tour.html">BAROSSA VALLEY WINE TOUR</a></li>
+                            <li><a href="adelaide-hills-wine-tour.html">ADELAIDE HILLS & HAHNDORF WINE TOUR</a></li>
+                            <li><a href="mclaren-vale-tour.html">MCLAREN VALE WINE TOUR</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="bus-hire.html">Bus Hire</a></li>
+                    <li><a href="memories.html">Memories</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><p>Get In Touch</p>
+                        <ul class="icon-text">
+                            <li><img src="resources/images/phone.svg"><a href="tel:+61452532573">0452532573</a></li>
+                            <li><img src="resources/images/email.svg"><a href="#">Email</a></li>
+                            <li><img src="resources/images/facebook.svg"><a href="#">Facebook</a></li>
+                            <li><img src="resources/images/instagram.svg"><a href="#">Instagram</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="contact-us max-width-container">
+                <div class="section-grid max-width">
+                    <h2 class="contact-us_title">Get In Touch</h2>
+                    <form action="contact.html" method="post" id="contactForm">
+                        
+                        <label for="firstname">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+    
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+                        <label for="mobile">Mobile Number</label>
+                        <input type="number" id="mobile" name="mobile" placeholder="Your mobile number">
+
+                        <label for="tourDate">Tour Requested date</label>
+                        <input type="date" id="tourDate" name="tourDate" required>
+    
+                        
+                        <label>Type of query</label><br>
+                        <input type="radio" id="adlHills" name="query" value="Adelaide Hills & Hahndorf Wine Tour" required>
+                        <label for="adlHills">Adelaide Hills & Hahndorf Wine Tour</label><br>
+                        <input type="radio" id="barossa" name="query" value="Barossa Valley Wine Tour" required>
+                        <label for="barossa">Barossa Valley Wine Tour</label><br>
+                        <input type="radio" id="mclaren" name="query" value="McLaren Vale Wine Tour" required>
+                        <label for="mclaren">McLaren Vale Wine Tour</label><br>
+                        <input type="radio" id="other" name="query" value="Other" required>
+                        <label for="other">Other</label><br>
+                        <textarea id="message" name="message" placeholder="Message..."
+                            style="height:150px"></textarea>
+                        
+                        <input class="main-cta-button" style="width: 100px;" type="submit" value="Send Enquiry">
+                    </form>
+                </div>
+            </section>
+            <section class="pseudo-footer-image-carousel max-width-container">
+                <div class="section-grid max-width">
+                    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "prevNextButtons": false, "pageDots": false, "autoPlay": 2000, "wrapAround": true }'>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1556.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1561.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1563.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1564.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1572.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1597.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1603.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1609.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1617.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1642.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1655.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1660.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1661.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1664.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1694.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1697.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1723.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1724.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1739.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1741.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1742.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1748.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1779.webp">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="global-footer max-width-container">
+            <div class="global-footer__grid max-width head-foot-background">
+                <p class="global-footer__copyright">Copyright 2024, Benders Bus Tours</p>
+
+                <ul class="global-footer__links">
+                    <li>
+                        <p>Quick Links</p>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="bus-hire.html">Bus Hire</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </li>    
+                    <li>
+                        <p>Tours</p>
+                        <ul>
+                            <li><a href="barossa-wine-tour.html">Barossa Valley Wine Tour</a></li>
+                            <li><a href="mclaren-vale-tour.html">McLaren Vale Wine Tour</a></li>
+                            <li><a href="adelaide-hills-wine-tour.html">Adelaide Hills Wine Tour</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <p>Get In Touch</p>
+                        <ul>
+                            <li><a href="tel:+61452532573">0452532573</a></li>
+                            <li><a href="#"><img src="resources/images/email.svg" alt="email icon"></a></li>
+                            <li><a href="#"><img src="resources/images/facebook.svg" alt="facebook icon"></a></li>
+                            <li><a href="#"><img src="resources/images/instagram.svg" alt="instagram icon"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script>
+
+            const mediaQuery = window.matchMedia('(min-width: 769px)');
+
+            function handleMediaQueryChange(event){
+                if(event.matches){
+                    document.getElementById('tours-root-nav').addEventListener('click', function(){
+                        document.getElementById('tours-nav-links').classList.remove('global-nav__tour-links-hide');
+                        document.getElementById('tours-nav-links').classList.add('global-nav__tour-links-show');
+                    });
+
+                    document.addEventListener('click', event =>{
+                        let isClickInside = document.getElementById('tours-root-nav').contains(event.target) || document.getElementById('tours-nav-links').contains(event.target);
+
+                        if(!isClickInside){
+                            document.getElementById('tours-nav-links').classList.remove('global-nav__tour-links-show');
+                            document.getElementById('tours-nav-links').classList.add('global-nav__tour-links-hide');
+                        }
+                    });
+
+                    //adding sticky to navigation links
+                    document.getElementById('global-header').classList.remove('sticky');
+                    document.getElementById('nav-header').classList.add('sticky');
+                }
+                else{
+                    //adding sticky to global header
+                    document.getElementById('nav-header').classList.remove('sticky');
+                    document.getElementById('global-header').classList.add('sticky');
+                }
+            }
+
+            handleMediaQueryChange(mediaQuery);
+
+            window.onresize = function(){
+                handleMediaQueryChange(mediaQuery);
+            }
+
+            function showAnswer(questionNumber){   
+                document.getElementById(`ar-d-${questionNumber}`).style.display = "none";
+                document.getElementById(`ar-u-${questionNumber}`).style.display = "block";
+                document.getElementById(`ans-${questionNumber}`).style.display = "block";
+            }
+            
+            function hideAnswer(questionNumber){   
+                document.getElementById(`ar-u-${questionNumber}`).style.display = "none";
+                document.getElementById(`ar-d-${questionNumber}`).style.display = "block";
+                document.getElementById(`ans-${questionNumber}`).style.display = "none";
+            }
+
+            function showMobileMenu(){
+                document.getElementById('mobile-menu').classList.remove('mobile-nav-hide');
+                document.getElementById('mobile-menu').classList.add('mobile-nav-show');
+            }
+
+            function hideMobileMenu(){
+                document.getElementById('mobile-menu').classList.remove('mobile-nav-show');
+                document.getElementById('mobile-menu').classList.add('mobile-nav-hide');
+            }
+
+            function getData(form) {
+                var formData = new FormData(form);
+                var data = '';
+
+                for (var pair of formData.entries()) {
+                    data += pair[0] + ": " + pair[1] + "\n";
+                }
+
+                alert(data);
+            }
+
+            document.getElementById("contactForm").addEventListener("submit", function (e) {
+                e.preventDefault();
+                getData(e.target);
+            });
+
+        </script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    </body>
+</html>
