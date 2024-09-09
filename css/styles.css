@@ -412,6 +412,7 @@ footer > .max-width {
 
 .memories-image-container{
     grid-column: span 12;
+    padding: 0.25rem;
 }
 
 @media only screen and (min-width: 600px) and (max-width:768px){
@@ -882,15 +883,7 @@ cite{
 
 .memories-image{
     width: 100%;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
     object-position: center;
-    padding: 0.25rem;
-}
-
-@media(width > 350px){
-    .memories-image{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }   
 }
