@@ -709,18 +709,48 @@ footer li a {
 .tour-hero{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
-.tour-hero h2{
-    font-size: 3em;
-    color: #F3EFEB;
-    text-align: center;
+.tour-hero-title-strip{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255, 0.5);
 }
 
-.tour-hero-image{
+.tour-hero h2{
+    font-size: 1.5em;
+    color: #545540;
+    text-align: center;
+    margin-bottom: 0rem;
+}
+
+@media(width > 700px){
+    .tour-hero h2{
+        font-size: 3em;
+    }   
+}
+
+.tour-hero-image-adl-hills{
+    background-image: url('../resources/images/carousel/0D0A1664.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.tour-hero-image-barossa{
     background-image: url('../resources/images/carousel/0D0A1564.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.tour-hero-image-mclaren{
+    background-image: url('../resources/images/carousel/0D0A1724.webp');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -739,8 +769,10 @@ ol{
     padding: 1em;
 }
 
-@media(width > 768px){
-    .tour-hero-image{
+@media(width > 600px){
+    .tour-hero-image-mclaren,
+    .tour-hero-image-barossa,
+    .tour-hero-image-adl-hills{
         height: 70vh;
         background-position: center;
     }
@@ -850,6 +882,7 @@ cite{
 
 .memories-image{
     width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
     padding: 0.25rem;
