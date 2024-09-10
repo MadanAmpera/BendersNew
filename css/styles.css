@@ -355,6 +355,11 @@ footer > .max-width {
     background-color: rgb(84, 85, 64, 0.2);
 }
 
+.faq-collection h4{
+    margin-bottom: 1.25rem;
+    margin-top: 3rem;
+}
+
 @media(width > 768px){
     .faq-collection{
         grid-column: 2 / 12;
