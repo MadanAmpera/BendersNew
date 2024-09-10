@@ -413,6 +413,9 @@ footer > .max-width {
 .memories-grid{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    padding: 0.5rem;
+    border: #545540 2px solid;
+    border-radius: 0.5rem;
 }
 
 .memories-image-container{
@@ -800,18 +803,22 @@ ol{
     justify-content: center;
 }
 
-.blog-stub-image{
+.blog-stub-image-container{
     grid-area: blog-image;
+    height: 250px;
     max-height: 250px;
+}
+
+.blog-stub-image-container img{
     width: 100%;
+    height: 100%;
     object-fit: cover;
-    align-self: center;
-    justify-self: center;
-    padding: 0.5rem;
+    padding: 0.75rem;
 }
 
 @media (width > 786px){
-    .blog-stub-image{
+    .blog-stub-image-container{
+        height: 200px;
         max-height: 200px;
     }
 }
@@ -823,17 +830,35 @@ ol{
 
 /* COMPONENTS - BLOG ARTICLE PAGE */
 
+.blog-article_text{
+    display: flex;
+    flex-direction: column;
+}
 
+.article-image{
+    object-fit: cover;
+    align-self: center;
+}
 
 /* COMPONENTS - HOME PAGE */
 
 .background-image{
-    background-image: url('../resources/images/site-hero.webp');
-    background-size: cover;
-    background-position-y: bottom;
-    background-position-x: 50%;
+    background-image: url('../resources/images/site-hero-cropped.webp');
     width: 100vw;
     height: 78vh;
+    background-size: cover;
+    background-position-x: 65%;
+}
+
+@media(width > 600px){
+    .background-image{
+        background-image: url('../resources/images/site-hero.webp');
+        background-size: cover;
+        background-position-y: bottom;
+        background-position-x: 50%;
+        width: 100vw;
+        height: 78vh;
+    }    
 }
 
 .site-hero_cta-button {
