@@ -40,7 +40,7 @@ body{
     grid-column: 4 / -4;
 }
 
-@media (width > 768px){
+@media (width > 600px){
     .page_cta-button{
         grid-column: 6 / -6;
     }
@@ -100,6 +100,10 @@ header > .max-width {
     display: none;
 }
 
+.mobile-nav-links .max-width{
+    height: 100vh;
+}
+
 @media (width > 768px){
     .global-nav{
         display: grid;
@@ -150,20 +154,31 @@ body > footer{
 
 footer > .max-width {
     max-width: 100vw;
+    padding: 0;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
 }
 
 .global-footer__grid{
     display: grid;
-    gap: 2em;
+    gap: 2.5em;
     grid-template-areas: "links"
                          "copyright";
 }
 
 .global-footer__copyright{
     grid-area: copyright;
-    color: #FFFFFF;
-    justify-self: center;
-    margin-bottom: 0rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 0.5em;
+    border-top: #F3EFEB 1px solid;
+}
+
+.global-footer__copyright p{
+    color: #F3EFEB;
+    margin-bottom: 0em;
 }
 
 .global-footer__links{
@@ -172,12 +187,18 @@ footer > .max-width {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    margin-top: 1em;
 }
 
-.global-footer__links li{
+.global-footer__links div, .global-footer__links div > ul{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+.global-footer__links ul > li{
+    margin-bottom: 0.5em;
 }
 
 .pseudo-footer-image-carousel .max-width{
@@ -185,7 +206,7 @@ footer > .max-width {
     padding: 0rem;
 }
 
-@media(width > 768px){
+@media(width > 600px){
     
     .global-footer__links{
         max-width: 1024px;
@@ -355,7 +376,7 @@ footer > .max-width {
     background-color: rgb(84, 85, 64, 0.2);
 }
 
-.faq-collection h4{
+.faq-collection h3{
     margin-bottom: 1.25rem;
     margin-top: 3rem;
 }
@@ -473,17 +494,17 @@ footer > .max-width {
 h1, h2, h3 {
     font-family: "MADE Mirage", Times, serif;
     color: #545540;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 0.75rem;
 }
 
-h4 {
+/* h3 {
     font-family: "Cheyenne Sans", Helvetica, sans-serif;
     color: #545540;
     font-size: 1.1rem;
     line-height: 1.5;
     margin-bottom: 1rem;
-}
+} */
 
 p {
     font-family: "Cheyenne Sans", Helvetica, sans-serif;
@@ -573,7 +594,7 @@ td {
 /* COMPONENTS - HEADER */
 
 .global-nav__promotions a{
-    font-family: "Cheyenne Sans", Helvetica, sans-serif;
+    font-family: "MADE Mirage", Times, serif;
     font-size: 0.9rem;
     line-height: 1.5;
     color: #A02334;
@@ -705,19 +726,26 @@ td {
 
 /* COMPONENTS - FOOTER */
 
-footer li p {
-    color: #F3EFEB;
-    text-decoration: none;
-    font-family: "MADE Mirage", Times, serif;
-    font-size: 1.2rem;
-}
-
 footer li a {
     color: #F3EFEB;
     text-decoration: none;
     font-family: "Cheyenne Sans", Helvetica, sans-serif;
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
+}
+
+.global-footer__links p{
+    font-family: "MADE Mirage", Times, serif;
+    color: #F3EFEB;
+    font-size: 1em;
+}
+
+
+.line{
+    border: 0;
+    width: 1px;
+    background-color: #F3EFEB;
+    height: 100%;
 }
 
 /* COMPONENTS - WINE TOUR PAGE */
@@ -857,7 +885,7 @@ ol{
         background-position-y: bottom;
         background-position-x: 50%;
         width: 100vw;
-        height: 78vh;
+        height: 85vh;
     }    
 }
 
@@ -885,9 +913,9 @@ ol{
 }
 
 blockquote {
-	font-family: "MADE Mirage", Times, serif;
+	font-family: "Cheyenne Sans", Helvetica, sans-serif;
     color: #545540;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     line-height: 1.5;
     margin-bottom: 1rem;
 	position: relative;
