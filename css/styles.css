@@ -327,7 +327,7 @@ footer > .max-width {
 .pricing-table{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -341,12 +341,12 @@ footer > .max-width {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .tour-duration p{
     font-size: 2rem;
-    color: #7596b8; 
-    margin-left: 15px;
+    color: #7596b8;
 }
 
 .wine-tour-cta-button{
@@ -360,23 +360,29 @@ footer > .max-width {
         grid-row: 1;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         align-items: center;
         border-right: #545540 1px solid;
+    }
+    .tour-duration{
+        margin-bottom: 7em;
+    }
+    .tour-duration h3{
+        margin-top: 2em;
     }
     .tour-info{
         grid-column: 5 / 9;
         grid-row: 1;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
     }
     .tour-itinerary{
         grid-column: 9 / 13;
         grid-row: 1;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         border-left: #545540 1px solid;
     }   
@@ -850,9 +856,13 @@ footer li a {
 
 .tour-hero-title-strip{
     width: 100%;
-    padding: 1rem;
+    padding-top: 0.25rem;
     margin-bottom: 20px;
     background-color: rgb(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .tour-hero h2{
@@ -920,9 +930,13 @@ ol{
 
 .bus-hire-hero-title-strip{
     width: 100%;
-    padding: 1rem;
+    padding-top: 0.25rem;
     margin-bottom: 20px;
     background-color: rgb(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .bus-hire-hero h2{
@@ -1252,19 +1266,8 @@ label {
 
 /* ANIMATION */
 
-.animating-arrow-container{
-    display: flex;
-    justify-content: center;
-    margin-top: 0.5em;
-}
-
-.animating-arrow-container-desktop-only{
-    display: none;
-    justify-content: center;
-    margin-top: 0.5em;
-}
-
 .fade-in-down {
+    margin-top: 0.25rem;
     animation: fade-in-down 2s ease infinite;
   }
   @keyframes fade-in-down {
@@ -1284,7 +1287,7 @@ label {
 }
 
 @media(width > 600px){
-    .animating-arrow-container-desktop-only{
-        display: flex;
+    .desktop-only{
+        display: block;
     }   
 }
