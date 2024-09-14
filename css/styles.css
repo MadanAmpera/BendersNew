@@ -324,6 +324,7 @@ footer > .max-width {
     }
     .home-one-third{
         grid-column: span 4;
+        margin-top: 2em;
     }
 }
 
