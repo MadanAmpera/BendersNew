@@ -926,7 +926,7 @@ ol{
 }
 
 .tour-info ul p{
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.125rem;
 }
 
 @media(width > 600px){
@@ -980,7 +980,7 @@ ol{
 }
 
 .bus-hire-info_text ul p{
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.125rem;
 }
 
 @media(width > 600px){
@@ -1173,7 +1173,7 @@ cite{
 }
 
 .home-content ul p{
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.125rem;
 }
 
 /* COMPONENTS - MEMORIES PAGE */
