@@ -277,6 +277,13 @@ footer > .max-width {
     display: none;
 }
 
+.home-content-image{
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
 @media (width > 768px){
     .mobile-reviews{
         display: none;
@@ -310,6 +317,13 @@ footer > .max-width {
     .benders-reviews_box6{
         grid-column: 9 / 13;
         grid-row: 3;
+    }
+
+    .home-two-third{
+        grid-column: span 8;
+    }
+    .home-one-third{
+        grid-column: span 4;
     }
 }
 
@@ -345,8 +359,9 @@ footer > .max-width {
 }
 
 .tour-duration p{
-    font-size: 2rem;
-    color: #7596b8;
+    font-size: 1rem;
+    margin-top: 12px;
+    color: #545540;
 }
 
 .wine-tour-cta-button{
@@ -360,7 +375,7 @@ footer > .max-width {
         grid-row: 1;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         border-right: #545540 1px solid;
     }
@@ -591,7 +606,7 @@ footer > .max-width {
 h1, h2, h3 {
     font-family: "MADE Mirage", Times, serif;
     color: #545540;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 0.75rem;
 }
 
@@ -856,7 +871,7 @@ footer li a {
 
 .tour-hero-title-strip{
     width: 100%;
-    padding-top: 0.25rem;
+    padding-top: 1rem;
     margin-bottom: 20px;
     background-color: rgb(255, 255, 255, 0.5);
     display: flex;
@@ -910,6 +925,10 @@ ol{
     padding: 1em;
 }
 
+.tour-info ul p{
+    margin-bottom: 0.25rem;
+}
+
 @media(width > 600px){
     .tour-hero-image-mclaren,
     .tour-hero-image-barossa,
@@ -958,6 +977,10 @@ ol{
     background-position: center;
     width: 100%;
     height: 300px;
+}
+
+.bus-hire-info_text ul p{
+    margin-bottom: 0.25rem;
 }
 
 @media(width > 600px){
@@ -1149,6 +1172,10 @@ cite{
     }   
 }
 
+.home-content ul p{
+    margin-bottom: 0.25rem;
+}
+
 /* COMPONENTS - MEMORIES PAGE */
 
 .memories-hero{
@@ -1214,9 +1241,9 @@ form {
 }
 
 input[type=text],
-input[type=date],
 input[type=number],
 input[type=email],
+input[type=date],
 select,
 textarea {
     width: 100%;
