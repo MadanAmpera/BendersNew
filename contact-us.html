@@ -88,7 +88,7 @@
                     </div>
                 </div>
                 <div class="section-grid max-width">
-                    <form action="contact.html" method="post" id="contactForm">
+                    <form action="send_email.php" method="post" id="contactForm">
                         
                         <label for="firstname">Name</label>
                         <input type="text" id="name" name="name" placeholder="Your name" required>
@@ -97,16 +97,19 @@
                         <input type="email" id="email" name="email" placeholder="Your email address" required>
 
                         <label for="mobile">Mobile Number</label>
-                        <input type="number" id="mobile" name="mobile" placeholder="Your mobile number">
+                        <input type="text" id="mobile" name="mobile" placeholder="Your mobile number">
 
                         <label for="tourDate">Tour Requested date</label>
-                        <input type="date" id="tourDate" name="tourDate">
+                        <div class="input-wrapprer">
+                            <input type="date" id="tourDate" name="tourDate">
+                        </div>
+                        
                         
                         <label for="groupSize">Group Size</label>
                         <input type="number" id="groupSize" name="groupSize" placeholder="Number of people in the group">
                         
                         <label>Type of query</label><br>
-                        <input type="radio" id="adlHills" name="query" value="Adelaide Hills & Hahndorf Wine Tour" required>
+                        <input type="radio" id="adlHills" name="query" value="Adelaide Hills and Hahndorf Wine Tour" required>
                         <label for="adlHills">Adelaide Hills & Hahndorf Wine Tour</label><br>
                         <input type="radio" id="barossa" name="query" value="Barossa Valley Wine Tour" required>
                         <label for="barossa">Barossa Valley Wine Tour</label><br>

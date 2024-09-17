@@ -2,7 +2,7 @@
 
 <html lang="en">
     <head>
-        <title>Bus Hire</title>
+        <title>Email Sent</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/reset.css">
@@ -80,34 +80,14 @@
             </nav>
         </header>
         <main class="main">
-            <section class="bus-hire-page max-width-container">
-                <div class="bus-hire-hero bus-hire-hero-image">
-                    <div class="bus-hire-hero-title-strip">
-                        <h2 style="margin-top: 0.5rem;">Bus Hire</h2>
-                        <a class="desktop-only" href="#bus-hire">
-                            <img class="fade-in-down" src="resources/images/arrow-down-sleek.svg">
-                        </a>
+            
+            <section class="contact-us-page max-width-container">
+                <div class="contact-us-hero">
+                    <div class="contact-us-hero-title-strip">
+                        <h2>Get In Touch</h2>
                     </div>
-                 </div>
-                <div id="bus-hire" class="section-grid max-width">
-                    <div class="bus-hire-info_text">
-                        <h3 style="margin-top: 12px; text-align: center; margin-bottom: 20px;">Looking for Bus Hire in Adelaide? Benders Bus Tours is your perfect choice!</h3>
-                        <p>At <strong>Benders Bus Tours</strong>, we provide <strong>affordable bus hire</strong> at the <strong>best value</strong>  for groups exploring South Australia’s top destinations. Whether you're planning a <strong>wine tour in the Barossa Valley</strong>, a scenic drive through the <strong>Adelaide Hills</strong> , or a tasting experience in <strong>McLaren Vale</strong>, we’ll help design the perfect itinerary to ensure your group enjoys every moment.</p>
-
-                        <p>If you’re unsure where to go, we’re happy to recommend the best wineries, breweries, and attractions to make your day unforgettable. Our fleet includes <strong>13-seater bus, 20-seater bus,</strong> and <strong>24-seater bus</strong>, offering safe and comfortable travel for groups of any size. We can also <strong>tailor bus sizes</strong> and create <strong>custom tours</strong> to meet your group’s specific needs, ensuring flexibility no matter how large or small your group is.</p>
-
-                        <p>Our friendly, professional drivers ensure your day runs smoothly and on time, so you can focus on enjoying yourself.</p>
-
-                        <h3>Services offered by Benders Bus Tours:</h3>
-                        <ul style="list-style: circle; margin-left: 3rem; margin-bottom: 12px;">
-                            <li><p><strong>Wine tours</strong> in Barossa Valley, McLaren Vale, and Adelaide Hills.</p></li>
-                            <li><p><strong>Brewery tours.</strong></p></li>
-                            <li><p><strong>Custom group tours</strong> and <strong>private tours</strong> at the best value.</p></li>
-                        </ul>
-                        <p>For <strong>reliable bus hire in Adelaide</strong> at the <strong>best value</strong>, whether you need a <strong>13-seater, 20-seater, or 24-seater bus</strong>, or something customized for your group, Benders Bus Tours is here to make your next trip unforgettable!</p>
-                    </div>
-                    <a href="contact-us.html" class="page_cta-button main-cta-button">Hire a Bus</a>
                 </div>
+                <p>Thank you for your message.</p>
             </section>
             <section class="pseudo-footer-image-carousel max-width-container">
                 <div class="section-grid max-width">
@@ -260,7 +240,19 @@
             window.onresize = function(){
                 handleMediaQueryChange(mediaQuery);
             }
+
+            function showAnswer(questionNumber){   
+                document.getElementById(`ar-d-${questionNumber}`).style.display = "none";
+                document.getElementById(`ar-u-${questionNumber}`).style.display = "block";
+                document.getElementById(`ans-${questionNumber}`).style.display = "block";
+            }
             
+            function hideAnswer(questionNumber){   
+                document.getElementById(`ar-u-${questionNumber}`).style.display = "none";
+                document.getElementById(`ar-d-${questionNumber}`).style.display = "block";
+                document.getElementById(`ans-${questionNumber}`).style.display = "none";
+            }
+
             function showMobileMenu(){
                 document.getElementById('mobile-menu').classList.remove('mobile-nav-hide');
                 document.getElementById('mobile-menu').classList.add('mobile-nav-show');

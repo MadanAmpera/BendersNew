@@ -1,28 +1,69 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $message = htmlspecialchars($_POST['message']);
+
+$name = htmlspecialchars($_POST['name']);
+$email = htmlspecialchars($_POST['email']);
+$contact = htmlspecialchars($_POST['mobile']);
+$tourDate = htmlspecialchars($_POST['tourDate']);
+$query = htmlspecialchars($_POST['query']);
+$groupSize = htmlspecialchars($_POST['groupSize']);
+$message = htmlspecialchars($_POST['message']);    
+
+// Email to yourself
+$to = "madanamperayani@gmail.com"; // Replace with your email address
+$subject = "Benders Bus Tours";
+$body = "Name: $name\nEmail ID: $email\nContact No.: $contact\nTour Requested date: $tourDate\nTour\Query Type: $query\nGroup Size: $groupSize\nMessage:\n$message";
     
-    // Email to yourself
-    $to = "your-email@example.com"; // Replace with your email address
-    $subject = "New Contact Form Submission";
-    $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
-    $headers = "From: $email";
-    
-    // Email to the user
-    $user_subject = "Thank you for contacting us!";
-    $user_body = "Hi $name,\n\nThank you for reaching out. We have received your message and will get back to you shortly.\n\nBest regards,\nYour Company Name";
-    $user_headers = "From: your-email@example.com"; // Replace with your email address
-    
-    // Send emails
-    $mail_sent = mail($to, $subject, $body, $headers);
-    $user_mail_sent = mail($email, $user_subject, $user_body, $user_headers);
-    
-    if ($mail_sent && $user_mail_sent) {
-        echo "Emails successfully sent!";
-    } else {
-        echo "Failed to send emails.";
-    }
-}
+// Email to the user
+$user_subject = "Thank you for query - Benders Bus Tours";
+$user_body = "Dear $name,\n\nThank you for your query.\n\nYou are very important to us, all the information received will always remain confidential. \nWe will contact you as soon as we review your message.\n\nIf you fail to receive a reply from us within a day please contact us via:\nEmail:bendersbustour@gmail.com\nPhone No: 0481313409\n\nRegards,\nBenders Bus Tours";
+ 
+require "vendor/autoload.php";
+
+//Sending email to Benders
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+
+$mailBenders = new PHPMailer(true);
+$mailBenders->isSMTP();
+$mailBenders->SMTPAuth = true;
+
+$mailBenders->Host = "smtp.gmail.com";
+$mailBenders->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+$mailBenders->Port = 587;
+
+$mailBenders->Username = "madanamperayani@gmail.com";
+$mailBenders->Password = "dlpz wanz qqst khii";
+
+$mailBenders->setFrom("madanamperayani@gmail.com", "Madan");
+$mailBenders->addAddress("madanamperayani@gmail.com", "Madan");
+
+$mailBenders->Subject = $subject;
+$mailBenders->Body = $body;
+
+$mailBenders->send();
+
+//Sending email to user
+
+$mailUser = new PHPMailer(true);
+$mailUser->isSMTP();
+$mailUser->SMTPAuth = true;
+
+$mailUser->Host = "smtp.gmail.com";
+$mailUser->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+$mailUser->Port = 587;
+
+$mailUser->Username = "madanamperayani@gmail.com";
+$mailUser->Password = "dlpz wanz qqst khii";
+
+$mailUser->setFrom("madanamperayani@gmail.com", "Madan");
+$mailUser->addAddress($email);
+
+$mailUser->Subject = $user_subject;
+$mailUser->Body = $user_body;
+
+$mailUser->send();
+
+header("Location: sent.html");    
+
 ?>
