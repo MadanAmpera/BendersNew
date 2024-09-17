@@ -1277,6 +1277,22 @@ input[type=date] {
     resize: none !important;
 }
 
+@media screen and (max-width: 768px) {
+    input[type=date] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: none;
+    }
+}
+
 label {
     text-transform: uppercase;
     font-family: "MADE Mirage", Times, serif;
