@@ -325,6 +325,7 @@ footer > .max-width {
     .home-one-third{
         grid-column: span 4;
         margin-top: 2em;
+        justify-self: center;
     }
 }
 
@@ -344,6 +345,10 @@ footer > .max-width {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+
+.pricing-table > table{
+    margin-top: 1rem;
 }
 
 .tour-info{
@@ -872,7 +877,7 @@ footer li a {
 
 .tour-hero-title-strip{
     width: 100%;
-    padding-top: 1rem;
+    padding-top: 0;
     margin-bottom: 20px;
     background-color: rgb(255, 255, 255, 0.5);
     display: flex;
@@ -888,9 +893,13 @@ footer li a {
     margin-bottom: 0rem;
 }
 
-@media(width > 700px){
+@media(width > 600px){
     .tour-hero h2{
         font-size: 3em;
+    }
+    .tour-hero-title-strip{
+        padding-top: 1rem;
+        
     }   
 }
 
@@ -950,7 +959,7 @@ ol{
 
 .bus-hire-hero-title-strip{
     width: 100%;
-    padding-top: 0.25rem;
+    padding-top: 0;
     margin-bottom: 20px;
     background-color: rgb(255, 255, 255, 0.5);
     display: flex;
@@ -966,9 +975,12 @@ ol{
     margin-bottom: 0rem;
 }
 
-@media(width > 700px){
+@media(width > 600px){
     .bus-hire-hero h2{
         font-size: 3em;
+    }
+    .bus-hire-hero-title-strip{
+        padding-top: 1rem;
     }   
 }
 
@@ -1000,7 +1012,7 @@ ol{
 
 .faq-hero-title-strip{
     width: 100%;
-    padding: 1rem;
+    padding: 0;
     margin-bottom: 20px;
     background-color: rgb(255, 255, 255, 0.5);
 }
@@ -1012,9 +1024,12 @@ ol{
     margin-bottom: 0rem;
 }
 
-@media(width > 700px){
+@media(width > 600px){
     .faq-hero h2{
         font-size: 3em;
+    }
+    .faq-hero-title-strip{
+        padding: 1rem;
     }   
 }
 
@@ -1028,7 +1043,7 @@ ol{
 
 .blog-hero-title-strip{
     width: 100%;
-    padding: 1rem;
+    padding: 0;
     margin-bottom: 20px;
     background-color: rgb(255, 255, 255, 0.5);
 }
@@ -1040,9 +1055,12 @@ ol{
     margin-bottom: 0rem;
 }
 
-@media(width > 700px){
+@media(width > 600px){
     .blog-hero h2{
         font-size: 3em;
+    }
+    .blog-hero-title-strip{
+        padding: 1rem;
     }   
 }
 
@@ -1188,7 +1206,7 @@ cite{
 
 .memories-hero-title-strip{
     width: 100%;
-    padding: 1rem;
+    padding: 0;
     margin-bottom: 20px;
     background-color: rgb(255, 255, 255, 0.5);
 }
@@ -1200,10 +1218,13 @@ cite{
     margin-bottom: 0rem;
 }
 
-@media(width > 700px){
+@media(width > 600px){
     .memories-hero h2{
         font-size: 3em;
-    }   
+    }
+    .memories-hero-title-strip{
+        padding: 1rem;
+    }
 }
 
 .memories-image{
@@ -1222,7 +1243,7 @@ cite{
 
 .contact-us-hero-title-strip{
     width: 100%;
-    padding: 1rem;
+    padding: 0;
     margin-bottom: 20px;
     background-color: rgb(255, 255, 255, 0.5);
 }
@@ -1234,9 +1255,12 @@ cite{
     margin-bottom: 0rem;
 }
 
-@media(width > 700px){
+@media(width > 600px){
     .contact-us-hero h2{
         font-size: 3em;
+    }
+    .contact-us-hero-title-strip{
+        padding: 1rem;
     }   
 }
 
@@ -1311,7 +1335,7 @@ label {
 
 .promotions-hero-title-strip{
     width: 100%;
-    padding: 1rem;
+    padding: 0;
     margin-bottom: 20px;
     background-color: rgb(255, 255, 255, 0.5);
 }
@@ -1327,10 +1351,13 @@ label {
     margin-bottom: 0.125rem;
 }
 
-@media(width > 700px){
+@media(width > 600px){
     .promotions-hero h2{
         font-size: 3em;
-    }   
+    }
+    .promotions-hero-title-strip{
+        padding: 1rem;
+    }
 }
 
 /* ANIMATION */
