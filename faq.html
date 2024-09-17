@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Frequently Asked Questions</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <base href="https://madanampera.github.io/BendersNew/">
+    </head>
+    <body>
+        <div class="global-nav__promotions">
+            <a href="promotions.html">SPECIAL OFFERS!</a>
+        </div>
+        <header id="global-header" class="global-header max-width-container">
+            <nav class="max-width head-foot-background">
+                <div class="global-nav">
+                    <div class="global-nav__hamburger-button">
+                        <img src="resources/images/menu.svg" alt="hamburger menu" onclick="showMobileMenu()" style="cursor: pointer;">
+                    </div>
+                    <a class="global-nav__logo" href="index.html">
+                        <img class="logo-style" src="resources/images/Benders-Logo-Cropped.png" alt="Benders Bus Tours logo">
+                    </a>
+                    <div class="global-nav__contact">
+                        
+                        <a class="phone-cta-button" href="tel:+61481313409">0481313409</a>
+                        <a class="phone-cta-button" href="tel:+61434077017">0434077017</a>
+                        <a href="https://www.facebook.com/bendersbustours?mibextid=LQQJ4d"><img src="resources/images/facebook.svg" alt="facebook icon"></a>
+                        <a href="https://www.instagram.com/benderswinetours?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="resources/images/instagram.svg" alt="instagram icon"></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <header id="nav-header" class="header-nav-links max-width-container">
+            <nav class="max-width head-foot-background">
+                <ul class="global-nav__links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><p id="tours-root-nav">Tours</p>
+                        <ul id="tours-nav-links" class="global-nav__tour-links global-nav__tour-links-hide">
+                            <li><a href="barossa-wine-tour.html">BAROSSA VALLEY WINE TOUR</a></li>
+                            <li><a href="adelaide-hills-wine-tour.html">ADELAIDE HILLS & HAHNDORF WINE TOUR</a></li>
+                            <li><a href="mclaren-vale-tour.html">MCLAREN VALE WINE TOUR</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="bus-hire.html">Bus Hire</a></li>
+                    <li><a href="memories.html">Memories</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact-us.html">Get In Touch</a></li>
+                </ul>
+            </nav>
+        </header>
+        <header id="mobile-menu" class="mobile-nav-links mobile-nav-hide max-width-container sticky">
+            <nav class="max-width head-foot-background">
+                <img class="mobile-nav-close" src="resources/images/close.svg" onclick="hideMobileMenu()" style="cursor: pointer;">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><p>Tours</p>
+                        <ul>
+                            <li><a href="barossa-wine-tour.html">BAROSSA VALLEY WINE TOUR</a></li>
+                            <li><a href="adelaide-hills-wine-tour.html">ADELAIDE HILLS & HAHNDORF WINE TOUR</a></li>
+                            <li><a href="mclaren-vale-tour.html">MCLAREN VALE WINE TOUR</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="bus-hire.html">Bus Hire</a></li>
+                    <li><a href="memories.html">Memories</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <ul class="icon-text">
+                        <li><img src="resources/images/message.svg"><a href="contact-us.html">SEND A QUERY</a></li>
+                        <li><img src="resources/images/phone.svg"><a href="tel:+61481313409">0481313409</a></li>
+                        <li><img src="resources/images/phone.svg"><a href="tel:+61434077017">0434077017</a></li>
+                        <li><img src="resources/images/email.svg"><a href="mailto:bendersbustour@gmail.com">Email</a></li>
+                        <li><img src="resources/images/facebook.svg"><a href="https://www.facebook.com/bendersbustours?mibextid=LQQJ4d">Facebook</a></li>
+                        <li><img src="resources/images/instagram.svg"><a href="https://www.instagram.com/benderswinetours?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a></li>
+                    </ul>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="faq-page max-width-container">
+                <div class="faq-hero">
+                    <div class="faq-hero-title-strip">
+                        <h2>FAQ</h2>
+                    </div>
+                </div>
+                <div class="section-grid max-width">
+                    <div class="faq-collection">
+                        <h3 style="margin-top: 1rem;">General Information</h3>
+                        <div class="faq-question-answer-set">
+                            <div class="faq-question-block">
+                                <h3 class="faq-question">What types of tours do you offer?</h3>
+                                <img id="ar-d-1" class="arrow-down faq-show" src="resources/images/arrow-drop-down.svg" onclick="showAnswer(1)">
+                                <img id="ar-u-1" class="arrow-up faq-hide" src="resources/images/arrow-drop-up.svg" onclick="hideAnswer(1)">
+                            </div>
+                            <div id="ans-1" class="faq-answer faq-hide">
+                                <p>Benders Bus Tours offers a variety of wine tours in South Australia, including trips to the Barossa Valley, McLaren Vale, Clare Valley, and Adelaide Hills. We specialize in private tours and customized itineraries to provide a personalized experience. Our tours highlight the best wineries, scenic views, and gourmet food stops in each region.</p>
+                            </div>
+                        </div>
+                        <div class="faq-question-answer-set">
+                            <div class="faq-question-block">
+                                <h3 class="faq-question">What is the minimum or maximum group size you take?</h3>
+                                <img id="ar-d-2" class="arrow-down faq-show" src="resources/images/arrow-drop-down.svg" onclick="showAnswer(2)">
+                                <img id="ar-u-2" class="arrow-up faq-hide" src="resources/images/arrow-drop-up.svg" onclick="hideAnswer(2)">
+                            </div>
+                            <div id="ans-2" class="faq-answer faq-hide">
+                                <p>We take groups ranging from a minimum of 4 people to a maximum of 40 people. Larger groups can also be accommodated and catered to. Get in touch with us to find out more.</p>
+                            </div>
+                        </div>
+                        <div class="faq-question-answer-set">
+                            <div class="faq-question-block">
+                                <h3 class="faq-question">How can I book a tour?</h3>
+                                <img id="ar-d-3" class="arrow-down faq-show" src="resources/images/arrow-drop-down.svg" onclick="showAnswer(3)">
+                                <img id="ar-u-3" class="arrow-up faq-hide" src="resources/images/arrow-drop-up.svg" onclick="hideAnswer(3)">
+                            </div>
+                            <div id="ans-3" class="faq-answer faq-hide">
+                                <p>You can book a tour directly through our website or by contacting us via phone or email. Click on our “Book a tour’ tab available on every page. Send your query, and we will get in touch with you within a day.</p>
+                            </div>
+                        </div>
+                        <h3>Pick-Up and Drop-Off</h3>
+                        <div class="faq-question-answer-set">
+                            <div class="faq-question-block">
+                                <h3 class="faq-question">Where are the pick-up and drop-off locations?</h3>
+                                <img id="ar-d-4" class="arrow-down faq-show" src="resources/images/arrow-drop-down.svg" onclick="showAnswer(4)">
+                                <img id="ar-u-4" class="arrow-up faq-hide" src="resources/images/arrow-drop-up.svg" onclick="hideAnswer(4)">
+                            </div>
+                            <div id="ans-4" class="faq-answer faq-hide">
+                                <p>We offer complimentary pick-up and drop-off within a 15-kilometer radius of the Adelaide CBD. This includes popular spots such as hotels, train stations, landmarks, and the address of your choice. Additional pick-up locations can be arranged for a fee. Contact us to discuss your specific requirements for a seamless and convenient experience.</p>
+                            </div>
+                        </div>
+                        <div class="faq-question-answer-set">
+                            <div class="faq-question-block">
+                                <h3 class="faq-question">Can I request multiple pick-up locations?</h3>
+                                <img id="ar-d-5" class="arrow-down faq-show" src="resources/images/arrow-drop-down.svg" onclick="showAnswer(5)">
+                                <img id="ar-u-5" class="arrow-up faq-hide" src="resources/images/arrow-drop-up.svg" onclick="hideAnswer(5)">
+                            </div>
+                            <div id="ans-5" class="faq-answer faq-hide">
+                                <p>Yes, you can request multiple pick-up locations. For additional pick-ups, depending on the distance between them, a fee of $50 to $100 will apply. This ensures everyone in your group can join the tour without hassle.
+                                </p>
+                            </div>
+                        </div>
+                        <h3>Wine Tour Details</h3>
+                        <div class="faq-question-answer-set">
+                            <div class="faq-question-block">
+                                <h3 class="faq-question">Which wine regions do you cover?</h3>
+                                <img id="ar-d-6" class="arrow-down faq-show" src="resources/images/arrow-drop-down.svg" onclick="showAnswer(6)">
+                                <img id="ar-u-6" class="arrow-up faq-hide" src="resources/images/arrow-drop-up.svg" onclick="hideAnswer(6)">
+                            </div>
+                            <div id="ans-6" class="faq-answer faq-hide">
+                                <p>We cover the most renowned wine regions in South Australia, including the Barossa Valley, McLaren Vale, Clare Valley, and Adelaide Hills. Each region offers unique experiences and exceptional wines, from bold reds to crisp whites, providing an unforgettable wine-tasting adventure.</p>
+                            </div>
+                        </div>
+                        <div class="faq-question-answer-set">
+                            <div class="faq-question-block">
+                                <h3 class="faq-question">What is included in a typical wine tour?</h3>
+                                <img id="ar-d-7" class="arrow-down faq-show" src="resources/images/arrow-drop-down.svg" onclick="showAnswer(7)">
+                                <img id="ar-u-7" class="arrow-up faq-hide" src="resources/images/arrow-drop-up.svg" onclick="hideAnswer(7)">
+                            </div>
+                            <div id="ans-7" class="faq-answer faq-hide">
+                                <p>Our wine tours typically include visits to 3 wineries, wine tastings, and a lunch stop. Each tour is designed to provide a comprehensive and enjoyable wine-tasting experience. We select top-rated wineries to ensure you sample the best wines the region has to offer.</p>
+                            </div>
+                        </div>
+                        <div class="faq-question-answer-set">
+                            <div class="faq-question-block">
+                                <h3 class="faq-question">Can I customize my wine tour itinerary?</h3>
+                                <img id="ar-d-8" class="arrow-down faq-show" src="resources/images/arrow-drop-down.svg" onclick="showAnswer(8)">
+                                <img id="ar-u-8" class="arrow-up faq-hide" src="resources/images/arrow-drop-up.svg" onclick="hideAnswer(8)">
+                            </div>
+                            <div id="ans-8" class="faq-answer faq-hide">
+                                <p>Absolutely! We offer tailor-made tours to suit your preferences. Whether you want to visit specific wineries, include additional activities, or focus on a particular type of wine, we can create a custom itinerary for you. Personalized tours ensure you get the most out of your wine-tasting experience.</p>
+                            </div>
+                        </div>
+                        <h3>Pricing and Payments</h3>
+                        <div class="faq-question-answer-set">
+                            <div class="faq-question-block">
+                                <h3 class="faq-question">How much does a wine tour cost?</h3>
+                                <img id="ar-d-9" class="arrow-down faq-show" src="resources/images/arrow-drop-down.svg" onclick="showAnswer(9)">
+                                <img id="ar-u-9" class="arrow-up faq-hide" src="resources/images/arrow-drop-up.svg" onclick="hideAnswer(9)">
+                            </div>
+                            <div id="ans-9" class="faq-answer faq-hide">
+                                <p>The cost of our wine tours varies depending on the tour type and the number of participants. Please visit our ‘Tours’ section for pricing details for each wine region. We offer competitive rates to ensure you receive excellent value for your wine tour experience.</p>
+                            </div>
+                        </div>
+                        <div class="faq-question-answer-set">
+                            <div class="faq-question-block">
+                                <h3 class="faq-question">Are tasting fees included in the tour price?</h3>
+                                <img id="ar-d-10" class="arrow-down faq-show" src="resources/images/arrow-drop-down.svg" onclick="showAnswer(10)">
+                                <img id="ar-u-10" class="arrow-up faq-hide" src="resources/images/arrow-drop-up.svg" onclick="hideAnswer(10)">
+                            </div>
+                            <div id="ans-10" class="faq-answer faq-hide">
+                                <p>Tasting fees are typically included in the tour price, but some wineries may charge additional fees. We will inform you of any extra charges when we finalize your itinerary. This transparency ensures no surprises on your tour day.</p>
+                            </div>
+                        </div>
+                        <h3>Special Requests and Accommodations</h3>
+                        <div class="faq-question-answer-set">
+                            <div class="faq-question-block">
+                                <h3 class="faq-question">Do you accommodate dietary restrictions?</h3>
+                                <img id="ar-d-11" class="arrow-down faq-show" src="resources/images/arrow-drop-down.svg" onclick="showAnswer(11)">
+                                <img id="ar-u-11" class="arrow-up faq-hide" src="resources/images/arrow-drop-up.svg" onclick="hideAnswer(11)">
+                            </div>
+                            <div id="ans-11" class="faq-answer faq-hide">
+                                <p>Yes, we can accommodate dietary restrictions. Please inform us of any special requirements when you book your tour, and we will make the necessary arrangements. Ensuring all guests have a comfortable and enjoyable experience is our priority.</p>
+                            </div>
+                        </div>
+                        <div class="faq-question-answer-set">
+                            <div class="faq-question-block">
+                                <h3 class="faq-question">Can I bring children on the tour?</h3>
+                                <img id="ar-d-12" class="arrow-down faq-show" src="resources/images/arrow-drop-down.svg" onclick="showAnswer(12)">
+                                <img id="ar-u-12" class="arrow-up faq-hide" src="resources/images/arrow-drop-up.svg" onclick="hideAnswer(12)">
+                            </div>
+                            <div id="ans-12" class="faq-answer faq-hide">
+                                <p>Children are welcome on our private tours. Please note that wine tasting is restricted to participants over the age of 18. Family-friendly options are available to ensure everyone enjoys the day.</p>
+                            </div>
+                        </div>
+                        <div class="faq-question-answer-set">
+                            <div class="faq-question-block">
+                                <h3 class="faq-question">Is the tour vehicle accessible for people with disabilities?</h3>
+                                <img id="ar-d-13" class="arrow-down faq-show" src="resources/images/arrow-drop-down.svg" onclick="showAnswer(13)">
+                                <img id="ar-u-13" class="arrow-up faq-hide" src="resources/images/arrow-drop-up.svg" onclick="hideAnswer(13)">
+                            </div>
+                            <div id="ans-13" class="faq-answer faq-hide">
+                                <p>We strive to accommodate all guests. Please contact us to discuss any specific accessibility needs, and we will do our best to make suitable arrangements. Accessibility is important to us, and we aim to provide an inclusive experience for all.</p>
+                            </div>
+                        </div>
+                        <h3>COVID-19 Policies</h3>
+                        <div class="faq-question-answer-set">
+                            <div class="faq-question-block">
+                                <h3 class="faq-question">What safety measures are in place due to COVID-19?</h3>
+                                <img id="ar-d-14" class="arrow-down faq-show" src="resources/images/arrow-drop-down.svg" onclick="showAnswer(14)">
+                                <img id="ar-u-14" class="arrow-up faq-hide" src="resources/images/arrow-drop-up.svg" onclick="hideAnswer(14)">
+                            </div>
+                            <div id="ans-14" class="faq-answer faq-hide">
+                                <p>We adhere to all local health guidelines to ensure the safety of our guests. This includes regular sanitation of vehicles, providing hand sanitizer, and practicing social distancing during tours. Your health and safety are our top priority.</p>
+                            </div>
+                        </div>
+                        <h3>Contact Benders Bus Tours</h3>
+                        <div class="faq-question-answer-set">
+                            <div class="faq-question-block">
+                                <h3 class="faq-question">How can I get in touch with Benders Bus Tours?</h3>
+                                <img id="ar-d-15" class="arrow-down faq-show" src="resources/images/arrow-drop-down.svg" onclick="showAnswer(15)">
+                                <img id="ar-u-15" class="arrow-up faq-hide" src="resources/images/arrow-drop-up.svg" onclick="hideAnswer(15)">
+                            </div>
+                            <div id="ans-15" class="faq-answer faq-hide">
+                                <p>You can contact us via email <a href="mailto:benderbustour@gmail.com">benderbustour@gmail.com</a> or call us at <a href="tel:+61481313409">0481 313 409</a> or <a href="tel:+61434077017">0434 077 017</a>. For more information, visit our <a href="contact-us.html">‘Get in Touch’</a> page. We are ready to assist you with any queries or special requests.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pseudo-footer-image-carousel max-width-container">
+                <div class="section-grid max-width">
+                    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "prevNextButtons": false, "pageDots": false, "autoPlay": 2000, "wrapAround": true }'>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1556.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1561.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1563.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1564.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1572.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1597.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1603.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1609.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1617.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1642.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1655.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1660.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1661.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1664.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1694.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1697.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1723.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1724.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1739.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1741.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1742.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1748.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1779.webp">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="global-footer max-width-container">
+            <div class="global-footer__grid max-width head-foot-background">
+                <div class="global-footer__copyright">
+                    <p>Copyright 2024, Benders Bus Tours</p>    
+                </div>
+                <ul class="global-footer__links">
+                    <div>
+                        <p>Quick Links</p>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="memories.html">Memories</a></li>
+                            <li><a href="bus-hire.html">Bus Hire</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <p>Tours</p>
+                        <ul>
+                            <li><a href="barossa-wine-tour.html">Barossa Valley Wine Tour</a></li>
+                            <li><a href="mclaren-vale-tour.html">McLaren Vale Wine Tour</a></li>
+                            <li><a href="adelaide-hills-wine-tour.html">Adelaide Hills Wine Tour</a></li>
+                        </ul>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <p>Get In Touch</p>
+                        <ul>
+                            <li><a href="tel:+61481313409">0481313409</a></li>
+                            <li><a href="+61434077017">0434077017</a></li>
+                            <li><a href="mailto:bendersbustour@gmail.com"><img src="resources/images/email.svg" alt="email icon"></a></li>
+                            <li><a href="https://www.facebook.com/bendersbustours?mibextid=LQQJ4d"><img src="resources/images/facebook.svg" alt="facebook icon"></a></li>
+                            <li><a href="https://www.instagram.com/benderswinetours?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="resources/images/instagram.svg" alt="instagram icon"></a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </footer>
+        <script>
+
+            const mediaQuery = window.matchMedia('(min-width: 769px)');
+
+            function handleMediaQueryChange(event){
+                if(event.matches){
+                    document.getElementById('tours-root-nav').addEventListener('click', function(){
+                        document.getElementById('tours-nav-links').classList.remove('global-nav__tour-links-hide');
+                        document.getElementById('tours-nav-links').classList.add('global-nav__tour-links-show');
+                    });
+
+                    document.addEventListener('click', event =>{
+                        let isClickInside = document.getElementById('tours-root-nav').contains(event.target) || document.getElementById('tours-nav-links').contains(event.target);
+
+                        if(!isClickInside){
+                            document.getElementById('tours-nav-links').classList.remove('global-nav__tour-links-show');
+                            document.getElementById('tours-nav-links').classList.add('global-nav__tour-links-hide');
+                        }
+                    });
+
+                    //adding sticky to navigation links
+                    document.getElementById('global-header').classList.remove('sticky');
+                    document.getElementById('nav-header').classList.add('sticky');
+                }
+                else{
+                    //adding sticky to global header
+                    document.getElementById('nav-header').classList.remove('sticky');
+                    document.getElementById('global-header').classList.add('sticky');
+                }
+            }
+
+            handleMediaQueryChange(mediaQuery);
+
+            window.onresize = function(){
+                handleMediaQueryChange(mediaQuery);
+            }
+
+            function showAnswer(questionNumber){   
+                document.getElementById(`ar-d-${questionNumber}`).style.display = "none";
+                document.getElementById(`ar-u-${questionNumber}`).style.display = "block";
+                document.getElementById(`ans-${questionNumber}`).style.display = "block";
+            }
+            
+            function hideAnswer(questionNumber){   
+                document.getElementById(`ar-u-${questionNumber}`).style.display = "none";
+                document.getElementById(`ar-d-${questionNumber}`).style.display = "block";
+                document.getElementById(`ans-${questionNumber}`).style.display = "none";
+            }
+
+            function showMobileMenu(){
+                document.getElementById('mobile-menu').classList.remove('mobile-nav-hide');
+                document.getElementById('mobile-menu').classList.add('mobile-nav-show');
+            }
+
+            function hideMobileMenu(){
+                document.getElementById('mobile-menu').classList.remove('mobile-nav-show');
+                document.getElementById('mobile-menu').classList.add('mobile-nav-hide');
+            }
+
+        </script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    </body>
+</html>

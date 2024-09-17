@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Benders Bus Tours</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <base href="https://madanampera.github.io/BendersNew/">
+    </head>
+    <body>
+        <div class="global-nav__promotions">
+            <a href="promotions.html">SPECIAL OFFERS!</a>
+        </div>
+        <header id="global-header" class="global-header max-width-container">
+            <nav class="max-width head-foot-background">
+                <div class="global-nav">
+                    <div class="global-nav__hamburger-button">
+                        <img src="resources/images/menu.svg" alt="hamburger menu" onclick="showMobileMenu()" style="cursor: pointer;">
+                    </div>
+                    <a class="global-nav__logo" href="index.html">
+                        <img class="logo-style" src="resources/images/Benders-Logo-Cropped.png" alt="Benders Bus Tours logo">
+                    </a>
+                    <div class="global-nav__contact">
+                        
+                        <a class="phone-cta-button" href="tel:+61481313409">0481313409</a>
+                        <a class="phone-cta-button" href="tel:+61434077017">0434077017</a>
+                        <a href="https://www.facebook.com/bendersbustours?mibextid=LQQJ4d"><img src="resources/images/facebook.svg" alt="facebook icon"></a>
+                        <a href="https://www.instagram.com/benderswinetours?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="resources/images/instagram.svg" alt="instagram icon"></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <header id="nav-header" class="header-nav-links max-width-container">
+            <nav class="max-width head-foot-background">
+                <ul class="global-nav__links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><p id="tours-root-nav">Tours</p>
+                        <ul id="tours-nav-links" class="global-nav__tour-links global-nav__tour-links-hide">
+                            <li><a href="barossa-wine-tour.html">BAROSSA VALLEY WINE TOUR</a></li>
+                            <li><a href="adelaide-hills-wine-tour.html">ADELAIDE HILLS & HAHNDORF WINE TOUR</a></li>
+                            <li><a href="mclaren-vale-tour.html">MCLAREN VALE WINE TOUR</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="bus-hire.html">Bus Hire</a></li>
+                    <li><a href="memories.html">Memories</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact-us.html">Get In Touch</a></li>
+                </ul>
+            </nav>
+        </header>
+        <header id="mobile-menu" class="mobile-nav-links mobile-nav-hide max-width-container sticky">
+            <nav class="max-width head-foot-background">
+                <img class="mobile-nav-close" src="resources/images/close.svg" onclick="hideMobileMenu()" style="cursor: pointer;">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><p>Tours</p>
+                        <ul>
+                            <li><a href="barossa-wine-tour.html">BAROSSA VALLEY WINE TOUR</a></li>
+                            <li><a href="adelaide-hills-wine-tour.html">ADELAIDE HILLS & HAHNDORF WINE TOUR</a></li>
+                            <li><a href="mclaren-vale-tour.html">MCLAREN VALE WINE TOUR</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="bus-hire.html">Bus Hire</a></li>
+                    <li><a href="memories.html">Memories</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <ul class="icon-text">
+                        <li><img src="resources/images/message.svg"><a href="contact-us.html">SEND A QUERY</a></li>
+                        <li><img src="resources/images/phone.svg"><a href="tel:+61481313409">0481313409</a></li>
+                        <li><img src="resources/images/phone.svg"><a href="tel:+61434077017">0434077017</a></li>
+                        <li><img src="resources/images/email.svg"><a href="mailto:bendersbustour@gmail.com">Email</a></li>
+                        <li><img src="resources/images/facebook.svg"><a href="https://www.facebook.com/bendersbustours?mibextid=LQQJ4d">Facebook</a></li>
+                        <li><img src="resources/images/instagram.svg"><a href="https://www.instagram.com/benderswinetours?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a></li>
+                    </ul>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="site-hero max-width-container">
+                <div class="section-grid max-width background-image">
+                    <div class="site-hero-button-collection">
+                        <a href="barossa-wine-tour.html" class="site-hero_cta-button">BAROSSA VALLEY</a>
+                        <a href="mclaren-vale-tour.html" class="site-hero_cta-button">MCLAREN VALE</a>
+                        <a href="adelaide-hills-wine-tour.html" class="site-hero_cta-button">ADELAIDE HILLS & HAHNDORF</a>
+                        <a href="bus-hire.html" class="site-hero_cta-button">BUS HIRE</a>
+                        <a style="align-self: center;" href="#about-benders">
+                            <img class="fade-in-down" src="resources/images/arrow-down-sleek.svg">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section id="about-benders" class="about-benders max-width-container">
+                <div class="section-grid max-width">
+                    <h3 style="text-transform: uppercase; margin-top: 12px;">About Benders Bus Tours</h3>
+                    <p>
+                        Benders Bus Tours’ provide group and destination services to the best wineries in the Adelaide region. Our dedicated team of experienced tour guides and event planners is here to ensure you have an unforgettable day. From crafting the perfect itinerary to arranging tastings at the region’s best wineries, we handle every detail. We offer Barossa Valley wine tours, McLaren Vale wine tours, Adelaide Hills wine tours and bus hires. All you need to do is sit back, relax, and enjoy a day filled with exceptional wines, stunning vineyard views, and wonderful memories. Join us for a wine tour that will not only meet but exceed your expectations, leaving you with lasting, joyful experiences.
+                    </p>
+                </div>
+            </section>
+            <section class="benders-reviews max-width-container reviews-bcg">
+                <div class="section-grid max-width reviews-bcg">
+                    <h3 class="reviews-heading" style="text-transform: uppercase; margin-top: 12px; text-align: center;">Our raving reviews</h3>
+                    <div class="main-carousel mobile-reviews" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true }'>
+                        <div class="carousel-cell">
+                            <div class="review-box">
+
+                                <blockquote>I recently booked a wine tour for my best friend's birthday, and it was an absolutely fantastic experience! The team did an amazing job organising the tour and was a pleasure to deal with throughout the process. They were incredibly accommodating and took great care of us every step of the way.</blockquote>
+                                <blockquote>The highlight of the day was when they surprised the birthday girl with a cake at the last winery—such a thoughtful touch! We were super happy with everything and would definitely recommend their services to anyone looking for a memorable wine tour experience.</blockquote>
+                                <blockquote>Thank you again, Simm and the team.</blockquote>
+                                
+                                <div class="star-rating">
+                                    <img src="resources/images/review-star.svg">
+                                    <img src="resources/images/review-star.svg">
+                                    <img src="resources/images/review-star.svg">
+                                    <img src="resources/images/review-star.svg">
+                                    <img src="resources/images/review-star.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="review-box">
+                                <blockquote>Our group from Perth had an awesome time touring the Barossa with Benders Bus Tours. Simm was a great guide, taking us to fantastic wineries we wouldn't have discovered on our own. Highly recommend their services!</blockquote>
+                                    
+                                    <div class="star-rating">
+                                        <img src="resources/images/review-star.svg">
+                                        <img src="resources/images/review-star.svg">
+                                        <img src="resources/images/review-star.svg">
+                                        <img src="resources/images/review-star.svg">
+                                        <img src="resources/images/review-star.svg">
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="review-box">
+                                <blockquote>Superb wine tour, with exclusive wine tastings and tailored itinerary to our needs.</blockquote>
+
+                                <blockquote>Highly recommended Benders Bus Tours to all and will rebook in future.</blockquote>
+                                
+                                <div class="star-rating">
+                                    <img src="resources/images/review-star.svg">
+                                    <img src="resources/images/review-star.svg">
+                                    <img src="resources/images/review-star.svg">
+                                    <img src="resources/images/review-star.svg">
+                                    <img src="resources/images/review-star.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="review-box">
+                                <blockquote>The best wine tour company 👏 5 stars 🌟 🌟🌟🌟🌟</blockquote>
+
+                                <blockquote>Simm was so easy to deal with, went above and beyond to organise and book our own personalised wine tour day. Benders are very reasonably priced and made it so easy to book.</blockquote>
+
+                                <blockquote>They are very professional and even organised a beautiful lunch spot for us.</blockquote>
+
+                                <blockquote>A fun and epic Barossa wine day out with the family that we won't forget.</blockquote>
+
+                                <blockquote>We were a loud and rowdy bunch, especially on the bus, but no complaints!</blockquote>
+
+                                <blockquote>Thankyou so much Simm, we had the best day and will book with Benders again!</blockquote>
+                                
+                                <div class="star-rating">
+                                    <img src="resources/images/review-star.svg">
+                                    <img src="resources/images/review-star.svg">
+                                    <img src="resources/images/review-star.svg">
+                                    <img src="resources/images/review-star.svg">
+                                    <img src="resources/images/review-star.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="review-box">
+                                <blockquote>
+                                    We had an incredible wine tour with Benders Bus Tours! Our driver was outstanding, going above and beyond to make our day special. The tour was very affordable, and we visited some fantastic wineries in Adelaide hills. Highly recommend Benders Bus Tours for a memorable and personalised wine tour experience.
+                                </blockquote>
+                                
+                                <div class="star-rating">
+                                    <img  src="resources/images/review-star.svg">
+                                    <img  src="resources/images/review-star.svg">
+                                    <img  src="resources/images/review-star.svg">
+                                    <img  src="resources/images/review-star.svg">
+                                    <img  src="resources/images/review-star.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="review-box">
+                                <blockquote>
+                                    Our Barossa wine tour with Sim was top notch. He went out of his way to make our group feel very welcome. Gave us recommendations, was flexible with plans, all round easygoing guy. Highly recommended
+                                </blockquote>
+                                
+                                <div class="star-rating">
+                                    <img  src="resources/images/review-star.svg">
+                                    <img  src="resources/images/review-star.svg">
+                                    <img  src="resources/images/review-star.svg">
+                                    <img  src="resources/images/review-star.svg">
+                                    <img  src="resources/images/review-star.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop-reviews">
+                        <div class="benders-reviews_box1 review-box">
+                            <blockquote>I recently booked a wine tour for my best friend's birthday, and it was an absolutely fantastic experience! The team did an amazing job organising the tour and was a pleasure to deal with throughout the process. They were incredibly accommodating and took great care of us every step of the way.</blockquote>
+                            <blockquote>The highlight of the day was when they surprised the birthday girl with a cake at the last winery—such a thoughtful touch! We were super happy with everything and would definitely recommend their services to anyone looking for a memorable wine tour experience.</blockquote>
+                            <blockquote>Thank you again, Simm and the team.</blockquote>
+                            <div class="star-rating">
+                                <img src="resources/images/review-star.svg">
+                                <img src="resources/images/review-star.svg">
+                                <img src="resources/images/review-star.svg">
+                                <img src="resources/images/review-star.svg">
+                                <img src="resources/images/review-star.svg">
+                            </div>
+                        </div>
+                        <div class="benders-reviews_box2 review-box">
+
+                            <blockquote>
+                                We had an incredible wine tour with Benders Bus Tours! Our driver was outstanding, going above and beyond to make our day special. The tour was very affordable, and we visited some fantastic wineries in Adelaide hills. Highly recommend Benders Bus Tours for a memorable and personalised wine tour experience.
+                            </blockquote>
+                            
+                            <div class="star-rating">
+                                <img  src="resources/images/review-star.svg">
+                                <img  src="resources/images/review-star.svg">
+                                <img  src="resources/images/review-star.svg">
+                                <img  src="resources/images/review-star.svg">
+                                <img  src="resources/images/review-star.svg">
+                            </div>
+                        </div>
+                        <div class="benders-reviews_box3 review-box">
+                            <blockquote style="align-self: flex-start;">The best wine tour company 👏 5 stars 🌟 🌟🌟🌟🌟</blockquote>
+
+                            <blockquote>Simm was so easy to deal with, went above and beyond to organise and book our own personalised wine tour day. Benders are very reasonably priced and made it so easy to book.</blockquote>
+
+                            <blockquote>They are very professional and even organised a beautiful lunch spot for us.</blockquote>
+
+                            <blockquote>A fun and epic Barossa wine day out with the family that we won't forget.</blockquote>
+
+                            <blockquote>We were a loud and rowdy bunch, especially on the bus, but no complaints!</blockquote>
+
+                            <blockquote>Thankyou so much Simm, we had the best day and will book with Benders again!</blockquote>
+                            <div class="star-rating">
+                                <img src="resources/images/review-star.svg">
+                                <img src="resources/images/review-star.svg">
+                                <img src="resources/images/review-star.svg">
+                                <img src="resources/images/review-star.svg">
+                                <img src="resources/images/review-star.svg">
+                            </div>
+                        </div>
+                        <div class="benders-reviews_box4 review-box">
+                            <blockquote>Our group from Perth had an awesome time touring the Barossa with Benders Bus Tours. Simm was a great guide, taking us to fantastic wineries we wouldn't have discovered on our own. Highly recommend their services!</blockquote>
+                            
+                            <div class="star-rating">
+                                <img src="resources/images/review-star.svg">
+                                <img src="resources/images/review-star.svg">
+                                <img src="resources/images/review-star.svg">
+                                <img src="resources/images/review-star.svg">
+                                <img src="resources/images/review-star.svg">
+                            </div>
+                        </div>
+                        <div class="benders-reviews_box5 review-box">
+                            <blockquote>Superb wine tour, with exclusive wine tastings and tailored itinerary to our needs.</blockquote>
+
+                            <blockquote>Highly recommended Benders Bus Tours to all and will rebook in future.</blockquote>
+                            
+                            <div class="star-rating">
+                                <img src="resources/images/review-star.svg">
+                                <img src="resources/images/review-star.svg">
+                                <img src="resources/images/review-star.svg">
+                                <img src="resources/images/review-star.svg">
+                                <img src="resources/images/review-star.svg">
+                            </div>
+                        </div>
+                        <div class="benders-reviews_box6 review-box">
+                            <blockquote>
+                                Our Barossa wine tour with Sim was top notch. He went out of his way to make our group feel very welcome. Gave us recommendations, was flexible with plans, all round easygoing guy. Highly recommended
+                            </blockquote>
+                            
+                            <div class="star-rating">
+                                <img  src="resources/images/review-star.svg">
+                                <img  src="resources/images/review-star.svg">
+                                <img  src="resources/images/review-star.svg">
+                                <img  src="resources/images/review-star.svg">
+                                <img  src="resources/images/review-star.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="home-content max-width-container">
+                <div class="section-grid max-width">
+                    <h3 style="text-transform: uppercase; margin-top: 12px;">Wine Tasting Tour Adelaide</h3>
+
+                    <h3>The Best Of &nbsp;Our Adelaide Wine Tours</h3>
+                    <p>
+                        Time and time again, South Australia’s wine regions have topped the ‘best wine regions in Australia’ lists. Adelaide Hills, Barossa Valley, and McLaren Vale are uniquely positioned and are some of the only regions that can take advantage of both warm and cool climate growing conditions. When you combine that with South Australia’s passion for pairing a drop with exquisite meals, it’s not hard to understand why tourists flock to the region to do wine tasting in Adelaide. Benders Bus Tours have been operating in the area for a while, and we’re favourites in the region for our superior service, our incredible wine tours, and our fantastic value for money. Here are a few of the highlights from each of our tours to give you an idea of what to expect when you book Benders Bus Tours for wine tasting in Adelaide.
+                    </p>
+                    <div class="home-one-third">
+                        <img class="home-content-image" src="resources/images/carousel/0D0A1563.webp">
+                    </div>
+                    <div class="home-two-third">
+                        <h3 style="margin-bottom: 12px;">Wine Tasting In Adelaide Hills</h3>
+                        <p>
+                            <a href="adelaide-hills-wine-tour.html">Our Adelaide Hills wine tour</a> is second to none when it comes to sightseeing, incredible food, and wine tasting. Whether you're bringing a small group of close friends or you have a whole crew of excited wine enthusiasts, you're guaranteed to love this tour.
+                        </p>
+                        <ul style="list-style: circle; margin-left: 4rem;">
+                            <li><p><span style="font-weight: bold;">Bird In Hand winery.</span> The first stop on the Adelaide Hills tour is the Bird In Hand winery. This winery is renowned in the area for their shiraz, but they also make beautiful pinot noir, chardonnay, and riesling amongst others. Bird In Hand has a very earthy, nature-rich atmosphere, making it the perfect first stop for the day.</p></li>
+                            <li><p><span style="font-weight: bold;">Shopping in Hahndorf.</span> If you adore German architecture, food, and history, you are going to fall in love with Hahndorf. As part of wine tasting in Adelaide Hills, we include a stop into the historic town so you can shop artisanal products to your heart's content.</p></li>
+                            <li><p><span style="font-weight: bold;">Mini-golf at Sidewood Wines.</span> After a long day of eating, drinking, and shopping, the perfect way to let your hair down is a round of mini-golf at Sidewood Wines. Don't expect your aim to be too fantastic!</p></li>
+                        </ul>
+                    </div>
+                    <div class="home-two-third">
+                        <h3 style="margin-bottom: 12px; margin-top: 12px;">Wine Tasting In Barossa Valley</h3>
+                        <p>
+                            There are so many opportunities for <a href="barossa-wine-tour.html">wine tasting in Barossa Valley</a>; we simply couldn't put it all into one tour. You'll simply have to come back and do a second round with Bender Bus Tours if you want to experience all of the Barossa Valley. There are a couple of places, however, that are incredible enough that we had to include them on both tours.
+                        </p>
+    
+                        <ul style="list-style: circle; margin-left: 4rem;">
+                            <li><p><span style="font-weight: bold;">Langmeil Winery.</span> The Freedom 1843 is believed to be the oldest Shiraz vineyard in the world, and you can find it at Langmeil Winery in the Barossa Valley. You'll have the opportunity to experience the rich history of this incredible winery and sample some of the finest wines in Australia.</p></li>
+                            <li><p><span style="font-weight: bold;">Kies Family Wines.</span> Kies Family Wines are just as renowned for their food and cafe as they are for their incredible wines. Both our Barossa Valley tours have the option to stop in at this family-owned winery for a bite to eat and to sample their vast range of vintages.</p></li>
+                            <li><p><span style="font-weight: bold;">Woodstock Winery.</span> If you're looking for a wine that is unashamedly Australian in origin and captures the essence of McLaren Vale, you can't go past the vintages on offer at Woodstock Winery. Visiting this vineyard is a truly wonderful experience, which is why we offer it on both of our tours wine tasting in McLaren Vale.</p></li>
+                        </ul>
+                    </div>
+                    <div class="home-one-third">
+                        <img class="home-content-image" src="resources/images/carousel/0D0A1603.webp">
+                    </div>
+                    <div class="home-one-third">
+                        <img class="home-content-image" src="resources/images/carousel/0D0A1739.webp">
+                    </div>
+                    <div class="home-two-third">
+                        <h3 style="margin-bottom: 12px;">Wine Tasting In McLaren Vale</h3>
+                        <p>
+                            You can't do wine tasting in Adelaide without visiting the McLaren Vale region. Much like our Barossa Valley tours, we couldn't narrow down all the marvellous wineries, cafes, and shops into one tour, so we've spread them out over two. There are a couple of destinations, however, that make appearances on both tours.
+                        </p>
+    
+                        <ul style="list-style: circle; margin-left: 4rem;">
+                            <li><p><span style="font-weight: bold;">Australian Boutique Premium Wines.</span> This little winery has been in operation for more than 25 years, and they specialise in connecting small wine producers to customers. If you're looking for unique wines you wouldn't find anywhere else, Australian Boutique Premium Wines is the place for you.</p></li>
+                            <li><p><span style="font-weight: bold;">Menz chocolate shop.</span> When you choose Benders Bus Tours for <a href="mclaren-vale-tour.html">wine tasting in McLaren Vale</a>, you'll end the day in Menz chocolate shop. The boutique, handmade chocolates are infamous in the area, and a sweet treat is just the thing to finish off a long day of sampling decadent wines.</p></li>
+                            <li><p><span style="font-weight: bold;">Woodstock Winery.</span> If you're looking for a wine that is unashamedly Australian in origin and captures the essence of McLaren Vale, you can't go past the vintages on offer at Woodstock Winery. Visiting this vineyard is a truly wonderful experience, which is why we offer it on both of our tours wine tasting in McLaren Vale.</p></li>
+                        </ul>
+                    </div>
+                    <h3 style="margin-top: 12px; text-align: center;">Why Choose Bender's Bus Tours For Wine Tasting In Adelaide?</h3>
+                    <p style="text-align: center;">
+                        If you're looking for a day full of breathtaking views, fine wine, and delicious artisan foods, you're going to love Benders Bus Tours. We offer a variety of tours wine tasting in Barossa Valley, McLaren Vale, and Adelaide Hills. We designed each of our tours carefully to give our customers and their guests the very best experience in South Australia's wine tasting regions. Bender's Bus Tours are renowned for our premium winery tours, value for money, and our unmatched customer service experience. No matter how big or small your event, Benders Bus Tours can tailor a tour to cater to you. If you're interested in organising wine tasting in Adelaide, don't hesitate to reach out and contact us today.
+                    </p>
+                    <a href="contact-us.html" class="page_cta-button main-cta-button">Book a Tour</a>
+                </div>
+            </section>
+            <section class="pseudo-footer-image-carousel max-width-container">
+                <div class="section-grid max-width">
+                    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "prevNextButtons": false, "pageDots": false, "autoPlay": 2000, "wrapAround": true }'>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1697.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1597.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1654.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1556.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1748.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1561.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1603.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1655.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1723.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1779.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1563.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1739.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1661.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1609.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1741.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1694.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1564.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1742.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1617.webp">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="carousel-image" src="resources/images/carousel/0D0A1572.webp">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="global-footer max-width-container">
+            <div class="global-footer__grid max-width head-foot-background">
+                <div class="global-footer__copyright">
+                    <p>Copyright 2024, Benders Bus Tours</p>    
+                </div>
+                <ul class="global-footer__links">
+                    <div>
+                        <p>Quick Links</p>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="memories.html">Memories</a></li>
+                            <li><a href="bus-hire.html">Bus Hire</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <p>Tours</p>
+                        <ul>
+                            <li><a href="barossa-wine-tour.html">Barossa Valley Wine Tour</a></li>
+                            <li><a href="mclaren-vale-tour.html">McLaren Vale Wine Tour</a></li>
+                            <li><a href="adelaide-hills-wine-tour.html">Adelaide Hills Wine Tour</a></li>
+                        </ul>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <p>Get In Touch</p>
+                        <ul>
+                            <li><a href="tel:+61481313409">0481313409</a></li>
+                            <li><a href="+61434077017">0434077017</a></li>
+                            <li><a href="mailto:bendersbustour@gmail.com"><img src="resources/images/email.svg" alt="email icon"></a></li>
+                            <li><a href="https://www.facebook.com/bendersbustours?mibextid=LQQJ4d"><img src="resources/images/facebook.svg" alt="facebook icon"></a></li>
+                            <li><a href="https://www.instagram.com/benderswinetours?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="resources/images/instagram.svg" alt="instagram icon"></a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </footer>
+        <script>
+
+            const mediaQuery = window.matchMedia('(min-width: 769px)');
+
+            function handleMediaQueryChange(event){
+                if(event.matches){
+                    document.getElementById('tours-root-nav').addEventListener('click', function(){
+                        document.getElementById('tours-nav-links').classList.remove('global-nav__tour-links-hide');
+                        document.getElementById('tours-nav-links').classList.add('global-nav__tour-links-show');
+                    });
+
+                    document.addEventListener('click', event =>{
+                        let isClickInside = document.getElementById('tours-root-nav').contains(event.target) || document.getElementById('tours-nav-links').contains(event.target);
+
+                        if(!isClickInside){
+                            document.getElementById('tours-nav-links').classList.remove('global-nav__tour-links-show');
+                            document.getElementById('tours-nav-links').classList.add('global-nav__tour-links-hide');
+                        }
+                    });
+
+                    //adding sticky to navigation links
+                    document.getElementById('global-header').classList.remove('sticky');
+                    document.getElementById('nav-header').classList.add('sticky');
+                }
+                else{
+                    //adding sticky to global header
+                    document.getElementById('nav-header').classList.remove('sticky');
+                    document.getElementById('global-header').classList.add('sticky');
+                }
+            }
+
+            handleMediaQueryChange(mediaQuery);
+
+            window.onresize = function(){
+                handleMediaQueryChange(mediaQuery);
+            }
+            
+            function showMobileMenu(){
+                document.getElementById('mobile-menu').classList.remove('mobile-nav-hide');
+                document.getElementById('mobile-menu').classList.add('mobile-nav-show');
+            }
+
+            function hideMobileMenu(){
+                document.getElementById('mobile-menu').classList.remove('mobile-nav-show');
+                document.getElementById('mobile-menu').classList.add('mobile-nav-hide');
+            }
+
+        </script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    </body>
+</html>
