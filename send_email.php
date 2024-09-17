@@ -9,7 +9,7 @@ $groupSize = htmlspecialchars($_POST['groupSize']);
 $message = htmlspecialchars($_POST['message']);    
 
 // Email to yourself
-$to = "madanamperayani@gmail.com"; // Replace with your email address
+$to = "bendersbustour@gmail.com"; // Replace with your email address
 $subject = "Benders Bus Tours";
 $body = "Name: $name\nEmail ID: $email\nContact No.: $contact\nTour Requested date: $tourDate\nTour\Query Type: $query\nGroup Size: $groupSize\nMessage:\n$message";
     
@@ -32,11 +32,11 @@ $mailBenders->Host = "smtp.gmail.com";
 $mailBenders->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mailBenders->Port = 587;
 
-$mailBenders->Username = "madanamperayani@gmail.com";
-$mailBenders->Password = "dlpz wanz qqst khii";
+$mailBenders->Username = "bendersbustour@gmail.com";
+$mailBenders->Password = "jyop lukl crqi aupy";
 
-$mailBenders->setFrom("madanamperayani@gmail.com", "Madan");
-$mailBenders->addAddress("madanamperayani@gmail.com", "Madan");
+$mailBenders->setFrom("bendersbustour@gmail.com", "Benders Bus Tours");
+$mailBenders->addAddress("bendersbustour@gmail.com", "Benders Bus Tours");
 
 $mailBenders->Subject = $subject;
 $mailBenders->Body = $body;
@@ -53,10 +53,10 @@ $mailUser->Host = "smtp.gmail.com";
 $mailUser->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mailUser->Port = 587;
 
-$mailUser->Username = "madanamperayani@gmail.com";
-$mailUser->Password = "dlpz wanz qqst khii";
+$mailUser->Username = "bendersbustour@gmail.com";
+$mailUser->Password = "jyop lukl crqi aupy";
 
-$mailUser->setFrom("madanamperayani@gmail.com", "Madan");
+$mailUser->setFrom("bendersbustour@gmail.com", "Benders Bus Tours");
 $mailUser->addAddress($email);
 
 $mailUser->Subject = $user_subject;
