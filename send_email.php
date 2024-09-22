@@ -8,8 +8,6 @@ $query = htmlspecialchars($_POST['query']);
 $groupSize = htmlspecialchars($_POST['groupSize']);
 $message = htmlspecialchars($_POST['message']);    
 
-// Email to yourself
-$to = "bendersbustour@gmail.com"; // Replace with your email address
 $subject = "Benders Bus Tours";
 $body = "Name: $name\nEmail ID: $email\nContact No.: $contact\nTour Requested date: $tourDate\nTour\Query Type: $query\nGroup Size: $groupSize\nMessage:\n$message";
     
@@ -25,17 +23,19 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 
 $mailBenders = new PHPMailer(true);
+
+$mailBenders->SMTPDebug = 2;
 $mailBenders->isSMTP();
 $mailBenders->SMTPAuth = true;
 
-$mailBenders->Host = "smtp.gmail.com";
-$mailBenders->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-$mailBenders->Port = 587;
+$mailBenders->Host = "mail.bendersbustours.com.au";
+$mailBenders->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+$mailBenders->Port = 465;
 
-$mailBenders->Username = "bendersbustour@gmail.com";
-$mailBenders->Password = "jyop lukl crqi aupy";
+$mailBenders->Username = "bendersbustoursc";
+$mailBenders->Password = "2s95WtqX(6dGP";
 
-$mailBenders->setFrom("bendersbustour@gmail.com", "Benders Bus Tours");
+$mailBenders->setFrom("info@bendersbustours.com.au", "Benders Bus Tours");
 $mailBenders->addAddress("bendersbustour@gmail.com", "Benders Bus Tours");
 
 $mailBenders->Subject = $subject;
@@ -46,17 +46,18 @@ $mailBenders->send();
 //Sending email to user
 
 $mailUser = new PHPMailer(true);
+
 $mailUser->isSMTP();
 $mailUser->SMTPAuth = true;
 
-$mailUser->Host = "smtp.gmail.com";
-$mailUser->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-$mailUser->Port = 587;
+$mailUser->Host = "mail.bendersbustours.com.au";
+$mailUser->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+$mailUser->Port = 465;
 
-$mailUser->Username = "bendersbustour@gmail.com";
-$mailUser->Password = "jyop lukl crqi aupy";
+$mailUser->Username = "bendersbustoursc";
+$mailUser->Password = "2s95WtqX(6dGP";
 
-$mailUser->setFrom("bendersbustour@gmail.com", "Benders Bus Tours");
+$mailUser->setFrom("info@bendersbustours.com.au", "Benders Bus Tours");
 $mailUser->addAddress($email);
 
 $mailUser->Subject = $user_subject;
