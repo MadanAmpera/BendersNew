@@ -4,12 +4,13 @@ $name = htmlspecialchars($_POST['name']);
 $email = htmlspecialchars($_POST['email']);
 $contact = htmlspecialchars($_POST['mobile']);
 $tourDate = htmlspecialchars($_POST['tourDate']);
-$query = htmlspecialchars($_POST['query']);
+$query = isset($_POST['query']) ? $_POST['query'] : [];
+$query_imploded = implode(",", $query);
 $groupSize = htmlspecialchars($_POST['groupSize']);
 $message = htmlspecialchars($_POST['message']);    
 
 $subject = "Benders Bus Tours";
-$body = "Name: $name\nEmail ID: $email\nContact No.: $contact\nTour Requested date: $tourDate\nTour\Query Type: $query\nGroup Size: $groupSize\nMessage:\n$message";
+$body = "Name: $name\nEmail ID: $email\nContact No.: $contact\nTour Requested date: $tourDate\nTour\Query Type: $query_imploded\nGroup Size: $groupSize\nMessage:\n$message";
     
 // Email to the user
 $user_subject = "Thank you for query - Benders Bus Tours";

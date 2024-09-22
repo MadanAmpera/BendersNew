@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/styles.css">
         <link rel="icon" type="image/x-icon" href="resources/images/favicon.ico">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        <!-- <base href="https://madanampera.github.io/BendersNew/"> -->
+        <base href="https://madanampera.github.io/BendersNew/">
     </head>
     <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-3508Y0R1BF"></script> 
     <script> 
@@ -44,7 +44,7 @@
             <nav class="max-width head-foot-background">
                 <ul class="global-nav__links">
                     <li><a href="index.html">Home</a></li>
-                    <li><p id="tours-root-nav">Tours</p>
+                    <li><p id="tours-root-nav">Wine Tours</p>
                         <ul id="tours-nav-links" class="global-nav__tour-links global-nav__tour-links-hide">
                             <li><a href="barossa-wine-tour.html">BAROSSA VALLEY WINE TOUR</a></li>
                             <li><a href="adelaide-hills-wine-tour.html">ADELAIDE HILLS & HAHNDORF WINE TOUR</a></li>
@@ -96,41 +96,39 @@
                 </div>
                 <div class="section-grid max-width">
                     <form action="send_email.php" method="post" id="contactForm">
-                        
                         <label for="firstname">Name</label>
                         <input type="text" id="name" name="name" placeholder="Your name" required>
-    
+                    
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" placeholder="Your email address" required>
-
+                    
                         <label for="mobile">Mobile Number</label>
                         <input type="text" id="mobile" name="mobile" placeholder="Your mobile number">
-
+                    
                         <label for="tourDate">Tour Requested date</label>
-                        <div class="input-wrapprer">
+                        <div class="input-wrapper">
                             <input type="date" id="tourDate" name="tourDate">
                         </div>
-                        
-                        
+                    
                         <label for="groupSize">Group Size</label>
                         <input type="number" id="groupSize" name="groupSize" placeholder="Number of people in the group">
-                        
+                    
                         <label>Type of query</label><br>
-                        <input type="radio" id="adlHills" name="query" value="Adelaide Hills and Hahndorf Wine Tour" required>
+                        <input type="checkbox" id="adlHills" name="query[]" value="Adelaide Hills and Hahndorf Wine Tour">
                         <label for="adlHills">Adelaide Hills & Hahndorf Wine Tour</label><br>
-                        <input type="radio" id="barossa" name="query" value="Barossa Valley Wine Tour" required>
+                        <input type="checkbox" id="barossa" name="query[]" value="Barossa Valley Wine Tour">
                         <label for="barossa">Barossa Valley Wine Tour</label><br>
-                        <input type="radio" id="mclaren" name="query" value="McLaren Vale Wine Tour" required>
+                        <input type="checkbox" id="mclaren" name="query[]" value="McLaren Vale Wine Tour">
                         <label for="mclaren">McLaren Vale Wine Tour</label><br>
-                        <input type="radio" id="busHire" name="query" value="Bus Hire" required>
+                        <input type="checkbox" id="busHire" name="query[]" value="Bus Hire">
                         <label for="busHire">Bus Hire</label><br>
-                        <input type="radio" id="other" name="query" value="Other" required>
+                        <input type="checkbox" id="other" name="query[]" value="Other">
                         <label for="other">Other</label><br>
-                        <textarea id="message" name="message" placeholder="Message..."
-                            style="height:150px"></textarea>
-                        
-                        <input class="main-cta-button" style="width: 100px; padding-top:1rem; padding-bottom: 1rem;" type="submit" value="Send Query">
+                        <textarea id="message" name="message" placeholder="Message..." style="height:150px"></textarea>
+                    
+                        <input class="main-cta-button" style="width: 120px; padding-top:1rem; padding-bottom: 1rem;" type="submit" value="Send Query">
                     </form>
+                    
                 </div>
             </section>
             <section class="pseudo-footer-image-carousel max-width-container">

@@ -348,7 +348,7 @@ footer > .max-width {
 }
 
 .pricing-table > table{
-    margin-top: 1rem;
+    margin-top: 2.3em;
 }
 
 .tour-info{
@@ -612,7 +612,7 @@ footer > .max-width {
 h1, h2, h3 {
     font-family: "MADE Mirage", Times, serif;
     color: #545540;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 0.75rem;
 }
 
@@ -627,7 +627,7 @@ h1, h2, h3 {
 p {
     font-family: "Cheyenne Sans", Helvetica, sans-serif;
     color: #545540;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     line-height: 1.5;
     margin-bottom: 1rem;
 }
@@ -693,6 +693,7 @@ td {
     background-color: rgb(141, 62, 56);
     border: 1px solid rgb(141, 62, 56);
     color: #F3EFEB;
+    font-size: 1.1rem;
     text-decoration: none;
     text-align: center;
     font-family: "MADE Mirage", Times, serif;
@@ -713,7 +714,7 @@ td {
 
 .global-nav__promotions a{
     font-family: "MADE Mirage", Times, serif;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     line-height: 1.5;
     color: #A02334;
     text-decoration: underline;
@@ -723,7 +724,7 @@ td {
     color: #F3EFEB;
     text-decoration: none;
     font-family: "MADE Mirage", Times, serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 0rem;
 }
 
@@ -751,7 +752,7 @@ td {
 .global-nav__tour-links-show li a{
     font-family: "Lane - Narrow";
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 800;
     color: #F3EFEB;
     text-decoration: none;
 }
@@ -849,13 +850,13 @@ footer li a {
     text-decoration: none;
     font-family: "Cheyenne Sans", Helvetica, sans-serif;
     margin-bottom: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 
 .global-footer__links p{
     font-family: "MADE Mirage", Times, serif;
     color: #F3EFEB;
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 
@@ -946,6 +947,17 @@ ol{
         height: 83vh;
         background-position: center;
     }
+}
+
+.wine-region-info{
+    margin-top: 4em;
+    max-width: 1440px;
+    padding: 2em;
+}
+
+.wine-region-info h3{
+    text-align: center;
+    margin-bottom: 1.5em;
 }
 
 /* COMPONENTS - BUS HIRE PAGE */
@@ -1165,7 +1177,7 @@ ol{
 blockquote {
 	font-family: "Cheyenne Sans", Helvetica, sans-serif;
     color: #545540;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     line-height: 1.5;
     margin-bottom: 1rem;
 	position: relative;
@@ -1321,7 +1333,7 @@ label {
     text-transform: uppercase;
     font-family: "MADE Mirage", Times, serif;
     color: #545540;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.5;
     margin-bottom: 1rem;
 }
