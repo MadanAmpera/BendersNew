@@ -958,6 +958,7 @@ ol{
 .wine-region-info h3{
     text-align: center;
     margin-bottom: 1.5em;
+    text-transform: uppercase;
 }
 
 /* COMPONENTS - BUS HIRE PAGE */
