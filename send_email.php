@@ -29,9 +29,9 @@ $mailBenders->SMTPDebug = 2;
 $mailBenders->isSMTP();
 $mailBenders->SMTPAuth = true;
 
-$mailBenders->Host = "mail.bendersbustours.com.au";
+$mailBenders->Host = "xxxxxx";
 $mailBenders->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-$mailBenders->Port = 465;
+$mailBenders->Port = 123;
 
 $mailBenders->Username = "xxxxx";
 $mailBenders->Password = "xxxxx";
@@ -51,9 +51,9 @@ $mailUser = new PHPMailer(true);
 $mailUser->isSMTP();
 $mailUser->SMTPAuth = true;
 
-$mailUser->Host = "mail.bendersbustours.com.au";
+$mailUser->Host = "xxxx";
 $mailUser->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-$mailUser->Port = 465;
+$mailUser->Port = 123;
 
 $mailUser->Username = "xxxx";
 $mailUser->Password = "xxxx";
