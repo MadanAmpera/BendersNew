@@ -33,8 +33,8 @@ $mailBenders->Host = "mail.bendersbustours.com.au";
 $mailBenders->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 $mailBenders->Port = 465;
 
-$mailBenders->Username = "bendersbustoursc";
-$mailBenders->Password = "Benderstours35!!!";
+$mailBenders->Username = "bendersbustoursc";//should remove this
+$mailBenders->Password = "Benderstours35!!!";//should remove this
 
 $mailBenders->setFrom("info@bendersbustours.com.au", "Benders Bus Tours");
 $mailBenders->addAddress("bendersbustour@gmail.com", "Benders Bus Tours");
@@ -55,8 +55,8 @@ $mailUser->Host = "mail.bendersbustours.com.au";
 $mailUser->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 $mailUser->Port = 465;
 
-$mailUser->Username = "bendersbustoursc";
-$mailUser->Password = "Benderstours35!!!";
+$mailUser->Username = "bendersbustoursc";//should remove this
+$mailUser->Password = "Benderstours35!!!";//should remove this
 
 $mailUser->setFrom("info@bendersbustours.com.au", "Benders Bus Tours");
 $mailUser->addAddress($email);
