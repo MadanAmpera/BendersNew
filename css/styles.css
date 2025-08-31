@@ -329,6 +329,10 @@ footer > .max-width {
     }
 }
 
+
+
+
+
 /* LAYOUT - WINE TOUR PAGE */
 
 .tour-page{
@@ -417,6 +421,28 @@ footer > .max-width {
 }
 
 .bus-hire-info_text{
+    justify-self: center;
+}
+
+/* LAYOUT - DISCOVER BAROSSA PAGE */
+
+.discover-barossa-page{
+    flex-direction: column;
+    align-items: center;
+}
+
+.discover-barossa-info_text{
+    justify-self: center;
+}
+
+/* LAYOUT - HAHNDORF AND BAROSSA PAGE */
+
+.hahndorf-and-barossa-page{
+    flex-direction: column;
+    align-items: center;
+}
+
+.hahndorf-and-barossa-info_text{
     justify-self: center;
 }
 
@@ -1163,12 +1189,26 @@ ol{
     padding: 1em 1em;
     border-radius: 40px;
     margin: 0.25em 0;
+    position: relative;
+    display: inline-block;
 }
 
 .site-hero_cta-button:hover {
     background-color: #7596b8;
     border: 1px solid #7596b8;
     color: #F3EFEB;
+}
+
+.badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #545540;
+    color: white;
+    padding: 2px 6px;
+    font-size: 12px;
+    border-radius: 12px;
+    font-weight: bold;
 }
 
 .reviews-bcg{
@@ -1370,6 +1410,116 @@ label {
     }
     .promotions-hero-title-strip{
         padding: 1rem;
+    }
+}
+
+/* COMPONENTS - DISCOVER BAROSSA */
+
+.discover-barossa-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.discover-barossa-hero-title-strip{
+    width: 100%;
+    padding-top: 0;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.discover-barossa-hero h2{
+    font-size: 1.5em;
+    color: #545540;
+    text-align: center;
+    margin-bottom: 0rem;
+}
+
+@media(width > 600px){
+    .discover-barossa-hero h2{
+        font-size: 3em;
+    }
+    .discover-barossa-hero-title-strip{
+        padding-top: 1rem;
+    }   
+}
+
+.discover-barossa-hero-image{
+    background-image: url('../resources/images/carousel/0D0A1617.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.discover-barossa-info_text ul p{
+    margin-bottom: 0.125rem;
+}
+
+@media(width > 600px){
+    .discover-barossa-hero-image{
+        height: 83vh;
+        background-position: center;
+    }
+}
+
+/* COMPONENTS - HAHNDORF AND BAROSSA */
+
+.hahndorf-and-barossa-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hahndorf-and-barossa-hero-title-strip{
+    width: 100%;
+    padding-top: 0;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hahndorf-and-barossa-hero h2{
+    font-size: 1.5em;
+    color: #545540;
+    text-align: center;
+    margin-bottom: 0rem;
+}
+
+@media(width > 600px){
+    .hahndorf-and-barossa-hero h2{
+        font-size: 3em;
+    }
+    .hahndorf-and-barossa-hero-title-strip{
+        padding-top: 1rem;
+    }   
+}
+
+.hahndorf-and-barossa-hero-image{
+    background-image: url('../resources/images/hahndorf-and-barossa.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.hahndorf-and-barossa-info_text ul p{
+    margin-bottom: 0.125rem;
+}
+
+@media(width > 600px){
+    .hahndorf-and-barossa-hero-image{
+        height: 83vh;
+        background-position: center;
     }
 }
 
