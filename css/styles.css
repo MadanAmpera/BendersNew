@@ -104,7 +104,7 @@ header > .max-width {
     height: 100vh;
 }
 
-@media (width > 768px){
+@media (width > 1024px){
     .global-nav{
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -244,6 +244,24 @@ footer > .max-width {
     }
 }
 
+.private-grid-box{
+    grid-column: 1 / -1;
+}
+
+.public-grid-box{
+    grid-column: 1 / -1;
+}
+
+@media(width >= 1025px){
+    .private-grid-box{
+        grid-column: 1 / 7;
+    }
+
+    .public-grid-box{
+        grid-column: 7 / 13;
+    }
+}
+
 .review-box{
     padding: 2rem;
     display: flex;
@@ -328,9 +346,6 @@ footer > .max-width {
         justify-self: center;
     }
 }
-
-
-
 
 
 /* LAYOUT - WINE TOUR PAGE */
@@ -855,7 +870,7 @@ td {
     margin-right: 5px;
 }
 
-@media( width > 768px ){
+@media( width > 1024px ){
     .global-header .max-width{
         padding-left: 0rem;
         padding-right: 0rem;
@@ -1162,7 +1177,7 @@ ol{
 .background-image{
     background-image: url('../resources/images/site-hero-cropped.webp');
     width: 100vw;
-    height: 78vh;
+    height: 85vh;
     background-size: cover;
     background-position-x: 0%;
 }
@@ -1176,6 +1191,51 @@ ol{
         width: 100vw;
         height: 85vh;
     }    
+}
+
+.public-private-box-container{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    align-self: end;
+    padding: 1em;
+    position: relative;
+    display: inline-block;
+}
+
+.public-private-box{
+    background-color: rgb(255, 255, 255, 0.5);
+    border: 1px solid #545540;
+    color: #545540;
+    padding: 1em 1em;
+    border-radius: 40px;
+    width: 100%;
+    /* height: 30vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.public-private-cta-button {
+    background-color: rgb(141, 62, 56);
+    border: 1px solid rgb(141, 62, 56);
+    color: #F3EFEB;
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-align: center;
+    font-family: "MADE Mirage", Times, serif;
+    padding: 0.75em 0.75em;
+    border-radius: 40px;
+}
+
+@media(width > 1024px){
+    .public-private-box{
+        height: 40vh;
+    }
+    .public-private-box-container{
+        padding: 4em;
+    }
 }
 
 .site-hero_cta-button {
