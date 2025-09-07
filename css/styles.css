@@ -1192,6 +1192,11 @@ ol{
         height: 85vh;
     }    
 }
+@media(width < 350px){
+    .background-image{
+        height: 100vh;
+    }
+}
 
 .public-private-box-container{
     display: flex; 
@@ -1215,6 +1220,30 @@ ol{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+}
+
+.public-private-badge-1 {
+    position: absolute;
+    top: -8px;
+    right: 70px;
+    background-color: #545540;
+    color: white;
+    padding: 2px 6px;
+    font-size: 12px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.public-private-badge-2 {
+    position: absolute;
+    top: -8px;
+    right: 8px;
+    background-color: #545540;
+    color: white;
+    padding: 2px 6px;
+    font-size: 12px;
+    border-radius: 12px;
+    font-weight: bold;
 }
 
 .public-private-cta-button {
