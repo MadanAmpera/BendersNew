@@ -1246,6 +1246,18 @@ ol{
     font-weight: bold;
 }
 
+@media(width > 1024px){
+    .public-private-badge-1 {
+        top: 40px;
+        right: 140px;
+    }
+
+    .public-private-badge-2 {
+        top: 40px;
+        right: 70px;
+    }   
+}
+
 .public-private-cta-button {
     background-color: rgb(141, 62, 56);
     border: 1px solid rgb(141, 62, 56);
