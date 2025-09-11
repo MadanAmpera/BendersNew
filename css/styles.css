@@ -1192,7 +1192,7 @@ ol{
         height: 85vh;
     }    
 }
-@media(width < 350px){
+@media(width < 380px){
     .background-image{
         height: 100vh;
     }
