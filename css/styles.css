@@ -1551,7 +1551,7 @@ label {
 }
 
 .discover-barossa-hero-image{
-    background-image: url('../resources/images/carousel/0D0A1617.webp');
+    background-image: url('../resources/images/25.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -1567,6 +1567,13 @@ label {
         height: 83vh;
         background-position: center;
     }
+}
+
+.icon-link{
+    color: #545540;
+    text-decoration: none;
+    font-family: "Cheyenne Sans", Helvetica, sans-serif;
+    font-size: 1.1rem;
 }
 
 /* COMPONENTS - HAHNDORF AND BAROSSA */
