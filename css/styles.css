@@ -254,11 +254,12 @@ footer > .max-width {
 
 @media(width >= 1025px){
     .private-grid-box{
-        grid-column: 1 / 7;
+        grid-column: 7 / 13;
     }
 
     .public-grid-box{
-        grid-column: 7 / 13;
+        
+        grid-column: 1 / 7;
     }
 }
 
@@ -1527,7 +1528,7 @@ label {
     width: 100%;
     padding-top: 0;
     margin-bottom: 20px;
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: rgb(255, 255, 255, 0.7);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1551,7 +1552,7 @@ label {
 }
 
 .discover-barossa-hero-image{
-    background-image: url('../resources/images/25.jpg');
+    background-image: url('../resources/images/discover-barossa.webp');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -1613,7 +1614,7 @@ label {
 }
 
 .hahndorf-and-barossa-hero-image{
-    background-image: url('../resources/images/hahndorf-and-barossa.webp');
+    background-image: url('../resources/images/handorf-barossa.webp');
     background-size: cover;
     background-position: center;
     width: 100%;
