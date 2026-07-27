@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="css/styles.css">
         <link rel="icon" type="image/x-icon" href="resources/images/favicon.ico">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
         
     </head>
     <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-3508Y0R1BF"></script> 
@@ -95,48 +97,63 @@
                     </div>
                 </div>
                 <div id="mclaren-page" class="section-grid max-width">
-                    <div class="pricing-table">
-                        <!-- <div class="tour-duration">
-                            <h3>DURATION</h3>
-                            <img src="resources/images/clock-lean.svg">
-                            <p>8 Hours</p>
-                        </div> -->
-                        <table>
-                            <caption>
-                                McLaren Vale wine tours prices
-                            </caption>
-                            <thead>
-                                <tr>
-                                <th scope="col">SIZE OF GROUP</th>
-                                <th scope="col">PRICE PER PERSON</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                <th scope="row">Small Groups (2-4 people)</th>
-                                <td>$350</td>
-                                </tr>
-                                <tr>
-                                <th scope="row">Medium Groups (5-8 people)</th>
-                                <td>$185</td>
-                                </tr>
-                                <tr>
-                                <th scope="row">Larger Groups (9-12 people)</th>
-                                <td>$165</td>
-                                </tr>
-                                <tr>
-                                <th scope="row">Groups of friends (13-20 people)</th>
-                                <td>$155</td>
-                                </tr>
-                                <tr>
-                                <th scope="row">Celebration Groups (21-40 people)</th>
-                                <td>$135</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="page-photo-grid">
+                        <div class="polaroid-stack">
+                            <figure class="polaroid polaroid--portrait">
+                                <img src="resources/images/testimonials/thumbs/IMG_4930.webp" width="700" height="933" alt="Tour guests smiling together behind a row of tasting paddles">
+                            </figure>
+                            <figure class="polaroid polaroid--landscape">
+                                <img src="resources/images/testimonials/thumbs/IMG_9765.webp" width="700" height="525" loading="lazy" alt="A tour group posing beside the Benders Bus Tours minibus in the Barossa">
+                            </figure>
+                            <figure class="polaroid polaroid--portrait">
+                                <img src="resources/images/testimonials/thumbs/IMG_5053.webp" width="700" height="933" loading="lazy" alt="Guests at the cellar door bar during a tasting at Kies Family Wines">
+                            </figure>
+                            <figure class="polaroid polaroid--landscape">
+                                <img src="resources/images/testimonials/thumbs/IMG_4892.webp" width="700" height="525" loading="lazy" alt="Tour group gathered around a vintage Kalleske ute at Greenock in the Barossa Valley">
+                            </figure>
+                        </div>
                     </div>
                     <div class="tour-itinerary">
-                        <img src="resources/images/tour-itinerary.png">
+                        <div class="sketch-title">Overview of your tour</div>
+                        <svg viewBox="0 0 880 1150" xmlns="http://www.w3.org/2000/svg" role="img"
+                            aria-label="Tour itinerary: pick up, winery visit and tasting, winery visit and tasting, optional stop at a local town or tourist attraction, lunch with wine, optional extra wine tasting or brewery/distillery stop, drop off">
+
+                            <line x1="400" y1="40" x2="400" y2="1110" stroke="#2e2e2c" stroke-width="3"/>
+
+                            <path d="M400,80 C440,120 430,175 400,215
+                                    C355,255 350,335 400,380
+                                    C445,420 445,500 400,545
+                                    C358,585 355,665 400,710
+                                    C442,748 440,830 400,875
+                                    C365,915 368,975 400,1010"
+                                    fill="none" stroke="#7a7a74" stroke-width="2"
+                                    stroke-dasharray="7 8" stroke-linecap="round"/>
+
+                            <circle cx="400" cy="80" r="9" fill="#2e2e2c"/>
+                            <text x="370" y="90" text-anchor="end" class="sk-caps" font-size="40">Pick Up</text>
+
+                            <circle cx="400" cy="215" r="9" fill="#2e2e2c"/>
+                            <text x="432" y="227" class="sk-hand" font-size="34">Winery visit &amp; tasting</text>
+
+                            <circle cx="400" cy="380" r="9" fill="#2e2e2c"/>
+                            <text x="432" y="392" class="sk-hand" font-size="34">Winery visit &amp; tasting</text>
+
+                            <circle cx="400" cy="545" r="9" fill="#2e2e2c"/>
+                            <text x="370" y="508" text-anchor="end" class="sk-hand" font-size="28">Option to visit the local</text>
+                            <text x="370" y="540" text-anchor="end" class="sk-hand" font-size="28">town or a tourist attraction</text>
+                            <text x="370" y="572" text-anchor="end" class="sk-addr" font-size="23">in the area</text>
+
+                            <circle cx="400" cy="710" r="9" fill="#2e2e2c"/>
+                            <text x="432" y="722" class="sk-hand" font-size="34">Lunch with wine</text>
+
+                            <circle cx="400" cy="875" r="9" fill="#2e2e2c"/>
+                            <text x="370" y="838" text-anchor="end" class="sk-hand" font-size="28">Option to add an extra</text>
+                            <text x="370" y="870" text-anchor="end" class="sk-hand" font-size="28">wine tasting or a stop at</text>
+                            <text x="370" y="902" text-anchor="end" class="sk-addr" font-size="23">a brewery / distillery</text>
+
+                            <circle cx="400" cy="1010" r="9" fill="#2e2e2c"/>
+                            <text x="432" y="1022" class="sk-caps" font-size="40">Drop Off</text>
+                        </svg>
                     </div>
                     <div class="tour-info">
                         <h3 style="text-transform: uppercase; margin-bottom: 2rem; margin-top: 2rem; align-self: center;">What to expect</h3>
@@ -158,7 +175,53 @@
                             <li><p>Special Occasion Cake: Request a celebratory cake, with gluten-free options available (additional cost).</p></li>
                             <li><p>Airport & Cruise Ship Pick-Up/Drop-Off: Available at an additional cost for added convenience.</p></li>
                         </ul>
-                        <a href="contact-us.html" class="main-cta-button wine-tour-cta-button">Get Itinerary & Book</a>
+
+                        <table style="margin-top: 15px;">
+                            <caption>
+                                McLaren Vale wine tours prices
+                            </caption>
+                            <thead>
+                                <tr>
+                                <th scope="col">SIZE OF GROUP</th>
+                                <th scope="col">PRICE PER PERSON</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <th scope="row">Small Groups (2-4 people)</th>
+                                <td>$350</td>
+                                </tr>
+                                <tr>
+                                <th scope="row">Medium Groups (5-8 people)</th>
+                                <td>$185</td>
+                                </tr>
+                                <tr>
+                                <th scope="row">Groups of friends (13-20 people)</th>
+                                <td>$155</td>
+                                </tr>
+                                <tr>
+                                <th scope="row">Celebration Groups (21-40 people)</th>
+                                <td>$135</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <!-- <a href="contact-us.html" class="main-cta-button wine-tour-cta-button">Get Itinerary & Book</a> -->
+
+                        <!-- NEW CTA BLOCK — replaces the single "Get Itinerary & Book" pill -->
+                        <div class="cta-stack">
+                            <a class="btn btn-book" href="#YOUR-BOKUN-WIDGET-LINK">
+                                Book Instantly
+                                <span class="sub">INSTANT CONFIRMATION</span>
+                            </a>
+                            <a class="btn btn-enquire" href="contact-us.html">
+                                Get a Custom Quote
+                                <span class="sub">WE REPLY WITHIN 24 HOURS</span>
+                            </a>
+                            <p class="deposit-note">
+                                Secure your date with just a <strong>$100 deposit</strong> — pay the balance closer to your tour.
+                            </p>
+                        </div>
                     </div>
                     
                 </div>
@@ -278,54 +341,7 @@
                 </ul>
             </div>
         </footer>
-        <script>
-
-            const mediaQuery = window.matchMedia('(min-width: 769px)');
-
-            function handleMediaQueryChange(event){
-                if(event.matches){
-                    document.getElementById('tours-root-nav').addEventListener('click', function(){
-                        document.getElementById('tours-nav-links').classList.remove('global-nav__tour-links-hide');
-                        document.getElementById('tours-nav-links').classList.add('global-nav__tour-links-show');
-                    });
-
-                    document.addEventListener('click', event =>{
-                        let isClickInside = document.getElementById('tours-root-nav').contains(event.target) || document.getElementById('tours-nav-links').contains(event.target);
-
-                        if(!isClickInside){
-                            document.getElementById('tours-nav-links').classList.remove('global-nav__tour-links-show');
-                            document.getElementById('tours-nav-links').classList.add('global-nav__tour-links-hide');
-                        }
-                    });
-
-                    //adding sticky to navigation links
-                    document.getElementById('global-header').classList.remove('sticky');
-                    document.getElementById('nav-header').classList.add('sticky');
-                }
-                else{
-                    //adding sticky to global header
-                    document.getElementById('nav-header').classList.remove('sticky');
-                    document.getElementById('global-header').classList.add('sticky');
-                }
-            }
-
-            handleMediaQueryChange(mediaQuery);
-
-            window.onresize = function(){
-                handleMediaQueryChange(mediaQuery);
-            }
-            
-            function showMobileMenu(){
-                document.getElementById('mobile-menu').classList.remove('mobile-nav-hide');
-                document.getElementById('mobile-menu').classList.add('mobile-nav-show');
-            }
-
-            function hideMobileMenu(){
-                document.getElementById('mobile-menu').classList.remove('mobile-nav-show');
-                document.getElementById('mobile-menu').classList.add('mobile-nav-hide');
-            }
-
-        </script>
+        <script src="js/main.js"></script>
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </body>
 </html>
