@@ -957,6 +957,32 @@ body.booking-modal-open { overflow: hidden; }
     /* offset alternate cards so the column reads as a collage, not a list */
     .polaroid:nth-child(odd) { margin-right: 32px; }
     .polaroid:nth-child(even) { margin-left: 32px; }
+
+    /* js measures the tour-info column and hides trailing cards here so the
+       stack never outgrows it on wide screens — mobile ignores this class,
+       so it can never accidentally hide a photo on the 2x2 layout */
+    .polaroid.polaroid--js-hidden {
+        display: none;
+    }
+}
+
+/* second, smaller stack that fills any leftover space under the itinerary
+   sketch — hidden entirely below the desktop breakpoint (mobile stacks the
+   three sections vertically, so there's no gap to fill); js reveals photos
+   here one at a time via .polaroid--js-hidden above */
+.itinerary-polaroid-stack {
+    display: none;
+}
+
+@media (width > 768px) {
+    .itinerary-polaroid-stack {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        max-width: 260px;
+        margin: 20px auto 0;
+    }
 }
 
 /* COMPONENTS - HEADER */
