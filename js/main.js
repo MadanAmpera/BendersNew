@@ -42,3 +42,29 @@ function hideMobileMenu(){
     document.getElementById('mobile-menu').classList.remove('mobile-nav-show');
     document.getElementById('mobile-menu').classList.add('mobile-nav-hide');
 }
+
+function openBookingModal(){
+    document.getElementById('booking-modal-overlay').classList.remove('booking-modal-hide');
+    document.getElementById('booking-modal-overlay').classList.add('booking-modal-show');
+    document.body.classList.add('booking-modal-open');
+    // nudge the embedded widget in case it sized itself while hidden
+    window.dispatchEvent(new Event('resize'));
+}
+
+function closeBookingModal(){
+    document.getElementById('booking-modal-overlay').classList.remove('booking-modal-show');
+    document.getElementById('booking-modal-overlay').classList.add('booking-modal-hide');
+    document.body.classList.remove('booking-modal-open');
+}
+
+function closeBookingModalOnOverlay(event){
+    if(event.target.id === 'booking-modal-overlay'){
+        closeBookingModal();
+    }
+}
+
+document.addEventListener('keydown', function(event){
+    if(event.key === 'Escape'){
+        closeBookingModal();
+    }
+});

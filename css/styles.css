@@ -836,6 +836,58 @@ max-width: 340px;
 }
 .deposit-note strong { color: var(--brick); }
 
+/* --- booking modal (Bokun widget popup) --- */
+.booking-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(63, 66, 51, 0.65);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.booking-modal-overlay.booking-modal-show { display: flex; }
+.booking-modal-overlay.booking-modal-hide { display: none; }
+/* outer frame: owns the rounded corners + clipping, never scrolls itself */
+.booking-modal-frame {
+    position: relative;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+    max-height: 90vh;
+    padding: 8px;
+}
+/* inner box: the actual scroll container, inset from the frame edge so its
+   (often square-cornered) native scrollbar never overlaps the rounded corner */
+.booking-modal {
+    max-height: calc(90vh - 16px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 36px 12px 12px;
+}
+.booking-modal .bokunWidget,
+.booking-modal iframe {
+    max-width: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box;
+}
+.booking-modal-close {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    line-height: 1;
+    color: var(--ink);
+    cursor: pointer;
+    padding: 6px 10px;
+}
+.booking-modal-close:hover { color: var(--brick); }
+body.booking-modal-open { overflow: hidden; }
+
 /* --- polaroid photo collage (tour pages) --- */
 /* built for four photos: a 2x2 scrapbook on mobile, a staggered single
    column on desktop. same four either way, so the page reads the same. */

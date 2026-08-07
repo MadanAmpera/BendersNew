@@ -105,10 +105,10 @@
                                 <img src="resources/images/testimonials/thumbs/IMG_9765.webp" width="700" height="525" loading="lazy" alt="A tour group posing beside the Benders Bus Tours minibus in the Barossa">
                             </figure>
                             <figure class="polaroid polaroid--portrait">
-                                <img src="resources/images/testimonials/thumbs/IMG_5053.webp" width="700" height="933" loading="lazy" alt="Guests at the cellar door bar during a tasting at Kies Family Wines">
+                                <img src="resources/images/testimonials/testimonial_080826_2.jpeg" width="700" height="933" loading="lazy" alt="Guests at the cellar door bar during a tasting at Kies Family Wines">
                             </figure>
                             <figure class="polaroid polaroid--landscape">
-                                <img src="resources/images/testimonials/thumbs/IMG_4892.webp" width="700" height="525" loading="lazy" alt="Tour group gathered around a vintage Kalleske ute at Greenock in the Barossa Valley">
+                                <img src="resources/images/testimonials/testimonial_080826_3.jpeg" width="700" height="525" loading="lazy" alt="Tour group gathered around a vintage Kalleske ute at Greenock in the Barossa Valley">
                             </figure>
                         </div>
                     </div>
@@ -158,6 +158,7 @@
                             <circle cx="400" cy="1010" r="9" fill="#2e2e2c"/>
                             <text x="432" y="1022" class="sk-caps" font-size="40">Drop Off</text>
                         </svg>
+                        
                     </div>
                     
                     <div class="tour-info">
@@ -205,7 +206,7 @@
                                 <td>$129</td>
                                 </tr>
                                 <tr>
-                                <th scope="row">Celebration Groups (21-40 people)</th>
+                                <th scope="row">Celebration Groups (21-48 people)</th>
                                 <td>$109</td>
                                 </tr>
                             </tbody>
@@ -214,7 +215,7 @@
                         <!-- <a href="contact-us.html" class="main-cta-button wine-tour-cta-button">Get Itinerary & Book</a> -->
                         <!-- NEW CTA BLOCK — replaces the single "Get Itinerary & Book" pill -->
                         <div class="cta-stack">
-                            <a class="btn btn-book" href="#YOUR-BOKUN-WIDGET-LINK">
+                            <a class="btn btn-book" href="javascript:void(0)" onclick="openBookingModal()">
                                 Book Instantly
                                 <span class="sub">INSTANT CONFIRMATION</span>
                             </a>
@@ -223,7 +224,7 @@
                                 <span class="sub">WE REPLY WITHIN 24 HOURS</span>
                             </a>
                             <p class="deposit-note">
-                                Secure your date with just a <strong>$100 deposit</strong> — pay the balance closer to your tour.
+                                Secure your date with just a <strong>10% deposit</strong> — pay the balance closer to your tour date.
                             </p>
                         </div>
 
@@ -344,7 +345,20 @@
                 </ul>
             </div>
         </footer>
+
+        <!-- Booking Modal (Bokun widget) -->
+        <div id="booking-modal-overlay" class="booking-modal-overlay booking-modal-hide" onclick="closeBookingModalOnOverlay(event)">
+            <div class="booking-modal-frame">
+                <button type="button" class="booking-modal-close" onclick="closeBookingModal()" aria-label="Close booking widget">&times;</button>
+                <div class="booking-modal">
+                    <div class="bokunWidget" data-src="https://widgets.bokun.io/online-sales/6473c8d3-39f2-4143-858f-492e0480a8f4/experience-calendar/1255837"></div>
+                    <noscript>Please enable javascript in your browser to book</noscript>
+                </div>
+            </div>
+        </div>
+
         <script src="js/main.js"></script>
+        <script type="text/javascript" src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=6473c8d3-39f2-4143-858f-492e0480a8f4" async></script>
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </body>
 </html>
